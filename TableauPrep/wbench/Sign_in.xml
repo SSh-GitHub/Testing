@@ -1,0 +1,11 @@
+<!--tsRequest>
+  <credentials personalAccessTokenName="SSh_Personal_Access_Token_02"
+    personalAccessTokenSecret="12O+IONNTui0GLCWCxR1bA==:ahXJwdURn3PrEEKwbqKMX6I7U55opdz8" >
+      <site contentUrl="https://dub01.online.tableau.com/#/site/sshsite/home"/>
+  </credentials>
+</tsRequest-->
+<tsRequest>
+  <credentials name="sergey.shabalov@metaintegration.info" password="SShTableau.01" >
+    <site contentUrl="sshsite" />
+  </credentials>
+</tsRequest>
