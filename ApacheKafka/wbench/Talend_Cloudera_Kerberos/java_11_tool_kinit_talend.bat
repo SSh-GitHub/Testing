@@ -1,0 +1,2 @@
+set _JAVA_OPTIONS=-Djava.security.krb5.conf=D:\user\Testing\ApacheKafka\wbench\Talend_Cloudera_Kerberos\krb5.conf 
+D:\user\miti\dev\trunk\External\jdk\jdk-11\bin\kinit.exe -J-Djava.security.krb5.conf=D:\user\Testing\ApacheKafka\wbench\Talend_Cloudera_Kerberos\krb5.conf  -k -t D:\user\Testing\ApacheKafka\wbench\Talend_Cloudera_Kerberos\talend.keytab talend/kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal@EXAMPLE.COM

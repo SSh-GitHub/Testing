@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Model SYSTEM 'model.dtd'>
+
+<Model name="TBC Model" desc="Analytic Integration Services model" accessCode="2" owner="hyperion" dataSource="HYPERIONEIS" version="9.3.0">
+  <FactView name="SALES" xCord="342" yCord="284">
+    <ModelViewMember name="STATEID" physicalTableName="TBC.SALES" physicalColumnName="STATEID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="PRODUCTID" physicalTableName="TBC.SALES" physicalColumnName="PRODUCTID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="SCENARIOID" physicalTableName="TBC.SALES" physicalColumnName="SCENARIOID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+  </FactView>
+</Model>

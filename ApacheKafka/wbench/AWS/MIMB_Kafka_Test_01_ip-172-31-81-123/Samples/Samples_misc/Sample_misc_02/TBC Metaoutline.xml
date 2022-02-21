@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MetaOtl SYSTEM 'motl.dtd'>
+
+<MetaOtl name="TBC Metaoutline" desc="Analytic Integration Services metaoutline" accessCode="2" owner="hyperion" datasource="HYPERIONEIS" modelName="TBC Model" lastChangeTimestamp="2011-08-25 11:53:05.100" dTPromptDatasource="0" dTPromptEISServer="0" version="9.3.0">
+  <MetaOtlDim name="Year" modelDimName="Year" type="0">
+    <MetaOtlDimMember name="Time.Quarter._1" modelViewName="Time" modelMemberName="Quarter" transformation="TRIM=Y;PREFIX=&quot;Qtr&quot;;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="5" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="Time" memberName="MonthMM" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="Time.Month._2" modelViewName="Time" modelMemberName="Month" transformation="TRIM=Y;" type="0" parentMemberName="Time.Quarter._1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="2" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="5" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlDim>
+  <MetaOtlDim name="Measures" modelDimName="Measures" type="0">
+    <MetaOtlDimMember name="MEASURES.CHILD._1" modelViewName="MEASURES" modelMemberName="CHILD" transformation="TRIM=Y;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" viewName="MEASURES" memberName="CONSOLIDATION" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" viewName="MEASURES" memberName="TWOPASSCALC" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" viewName="MEASURES" memberName="STORAGE" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" viewName="MEASURES" memberName="TIMEBALANCE" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" viewName="MEASURES" memberName="SKIP" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" viewName="MEASURES" memberName="VARIANCEREPORTING" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Alias" viewName="MEASURES" memberName="MEASURES_ALIAS" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Formula" viewName="MEASURES" memberName="FORMULA" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="MEASURES" memberName="SORTKEY" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="5" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="1" instanceNo="1" />
+  </MetaOtlDim>
+  <MetaOtlDim name="Product" modelDimName="Product" type="0">
+    <MetaOtlDimMember name="PRODUCTDIM.FAMILY._1" modelViewName="PRODUCTDIM" modelMemberName="FAMILY" transformation="TRIM=Y;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" viewName="PRODUCTDIM" memberName="CONSOLIDATION" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Alias" viewName="PRODUCTDIM" memberName="FAMILY_ALIAS" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="PRODUCTDIM" memberName="FAMILY" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="PRODUCTDIM" memberName="SKU" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlMemberPredicate filterName="*Default" definition="PRODUCTDIM.FAMILY in (&apos;100&apos;,&apos;200&apos;,&apos;300&apos;,&apos;400&apos;,&apos;Diet&apos;)" type="0" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="PRODUCTDIM.SKU._2" modelViewName="PRODUCTDIM" modelMemberName="SKU" transformation="TRIM=Y;" type="0" parentMemberName="PRODUCTDIM.FAMILY._1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Alias" viewName="PRODUCTDIM" memberName="SKU_ALIAS" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlDim>
+  <MetaOtlDim name="Market" modelDimName="Market" type="0">
+    <MetaOtlDimMember name="REGION.REGION._1" modelViewName="REGION" modelMemberName="REGION" transformation="TRIM=Y;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Use_Defined_Attribute" viewName="REGION" memberName="UDA" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="MARKET.STATE._2" modelViewName="MARKET" modelMemberName="STATE" transformation="TRIM=Y;" type="0" parentMemberName="REGION.REGION._1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Use_Defined_Attribute" viewName="MARKET" memberName="UDAMKTSIZE" instanceNo="1" />
+      <MetaOtlProperty type="Use_Defined_Attribute" viewName="MARKET" memberName="UDAMKTTYPE" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="MARKET" memberName="STATEID" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlDim>
+  <MetaOtlDim name="Scenario" modelDimName="Scenario" type="0">
+    <MetaOtlDimMember name="SCENARIO.SCENARIO._1" modelViewName="SCENARIO" modelMemberName="SCENARIO" transformation="TRIM=Y;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" viewName="SCENARIO" memberName="CONSOLIDATION" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Ascending" viewName="SCENARIO" memberName="SCENARIOID" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="Variance._2" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="5" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="5" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Formula" staticValue="@VAR(&quot;Actual&quot;,&quot;Budget&quot;);" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="Variance %._3" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="5" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="5" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Formula" staticValue="@VARPER(&quot;Actual&quot;,&quot;Budget&quot;);" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="2" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="P=P;V=&quot;_Misc&quot;;" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlDim>
+  <MetaOtlAttributeDim name="Caffeinated" modelDimName="Product" baseDimName="Product" dataType="Boolean">
+    <MetaOtlDimMember name="PRODUCT.CAFFEINATED._1" modelViewName="PRODUCT" modelMemberName="CAFFEINATED" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Attribute_Association" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlAttributeDim>
+  <MetaOtlAttributeDim name="Ounces" modelDimName="Product" baseDimName="Product" dataType="Numeric">
+    <MetaOtlDimMember name="PRODUCT.OUNCES._1" modelViewName="PRODUCT" modelMemberName="OUNCES" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Attribute_Association" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlAttributeDim>
+  <MetaOtlAttributeDim name="Pkg Type" modelDimName="Product" baseDimName="Product" dataType="Text">
+    <MetaOtlDimMember name="PRODUCT.PKGTYPE._1" modelViewName="PRODUCT" modelMemberName="PKGTYPE" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Attribute_Association" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlAttributeDim>
+  <MetaOtlAttributeDim name="Population" modelDimName="Market" baseDimName="Market" dataType="Numeric">
+    <MetaOtlDimMember name="POPULATION.POPGROUP._1" modelViewName="POPULATION" modelMemberName="POPGROUP" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Sort_Descending" viewName="POPULATION" memberName="POPGROUP" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlDimMember name="POPULATION.POPULATION._2" modelViewName="POPULATION" modelMemberName="POPULATION" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0" parentMemberName="POPULATION.POPGROUP._1">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Alias" viewName="POPULATION" memberName="POPULATION_ALIAS" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Attribute_Association" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlAttributeDim>
+  <MetaOtlAttributeDim name="Intro Date" modelDimName="Product" baseDimName="Product" dataType="Date">
+    <MetaOtlDimMember name="PRODUCT.INTRODATE._1" modelViewName="PRODUCT" modelMemberName="INTRODATE" transformation="TRIM=Y;REPLACE=&quot; &quot;,&quot;_&quot;,A;" type="0">
+      <MetaOtlProperty type="Consolidation_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Flag" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Load_Cutoff" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="MemberSet_Recursive_Depth" staticValue="1" instanceNo="1" />
+      <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="RPM_MBRSET_LOADCUTOFF" staticValue="0" instanceNo="1" />
+      <MetaOtlProperty type="Attribute_Association" staticValue="0" instanceNo="1" />
+    </MetaOtlDimMember>
+    <MetaOtlProperty type="Dimension_Type" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Two_Pass_Calc" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Data_Storage_Attribute" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Time_Balance_Skip" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Variance_Report" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Currency_Conversion" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Density" staticValue="1" instanceNo="1" />
+    <MetaOtlProperty type="Default_Bucket" staticValue="" instanceNo="1" />
+    <MetaOtlProperty type="Duplicate_Members" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Dynamic_Time" staticValue="0" instanceNo="1" />
+    <MetaOtlProperty type="Enable_Compression_Dim" staticValue="0" instanceNo="1" />
+  </MetaOtlAttributeDim>
+  <MetaOtlMeasure name="SALES.AMOUNT._1" modelViewName="SALES" modelMemberName="AMOUNT" transformation="" />
+  <MetaOtlFilter name="*Default" />
+  <MetaOtlProperty type="Size_Governor" staticValue="0" instanceNo="0" />
+  <MetaOtlProperty type="Time_Governor" staticValue="0" instanceNo="1" />
+  <MetaOtlProperty type="Partial_View_Flag" staticValue="2" instanceNo="2" />
+  <MetaOtlProperty type="Metaoutline_Optimization" staticValue="31" instanceNo="3" />
+  <MetaOtlProperty type="RPM_SOURCE_DB_CONNECT_OPTION" staticValue="0" instanceNo="4" />
+  <MetaOtlProperty type="GS_GEN_BY_NAME" staticValue="0" instanceNo="5" />
+  <MetaOtlProperty type="GS_USE_NAME_OF" staticValue="0" instanceNo="6" />
+  <MetaOtlProperty type="GS_DELIMITER" staticValue="0" instanceNo="7" />
+  <MetaOtlProperty type="GS_DATE_FORMAT" staticValue="0" instanceNo="8" />
+  <MetaOtlProperty type="GS_BUCKETING_TYPE" staticValue="0" instanceNo="9" />
+  <MetaOtlProperty type="GS_TRUE_STRING" staticValue="True" instanceNo="10" />
+  <MetaOtlProperty type="GS_FALSE_STRING" staticValue="False" instanceNo="11" />
+  <MetaOtlProperty type="GS_ATTR_CALC_DIM_NAME" staticValue="Attribute Calculations" instanceNo="12" />
+  <MetaOtlProperty type="GS_SUM_MBR_NAME" staticValue="Sum" instanceNo="13" />
+  <MetaOtlProperty type="GS_COUNT_MBR_NAME" staticValue="Count" instanceNo="14" />
+  <MetaOtlProperty type="GS_AVERAGE_MBR_NAME" staticValue="Average" instanceNo="15" />
+  <MetaOtlProperty type="GS_MIN_MBR_NAME" staticValue="Min" instanceNo="16" />
+  <MetaOtlProperty type="GS_MAX_MBR_NAME" staticValue="Max" instanceNo="17" />
+  <MetaOtlDTReport name="Market detail" timeGov="0" rowGov="0" customizationAllowed="0">
+    <MetaOtlDTMember modelViewName="MARKET" modelMemberName="STATE" sortOrder="-1" displayOrder="3" sortValue="0" />
+    <MetaOtlDTMember modelViewName="POPULATION" modelMemberName="POPULATION_ALIAS" sortOrder="-1" displayOrder="4" sortValue="0" />
+    <MetaOtlDTMember modelViewName="REGION" modelMemberName="REGION" sortOrder="-1" displayOrder="1" sortValue="0" />
+    <MetaOtlDTMember modelViewName="REGION" modelMemberName="DIRECTOR" sortOrder="-1" displayOrder="2" sortValue="0" />
+    <MetaOtlDTIntersection dimensionName="Year" memberName="Time.Month._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Product" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Market" memberName="MARKET.STATE._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Scenario" levelId="-1" generationId="-1" />
+  </MetaOtlDTReport>
+  <MetaOtlDTReport name="Measures detail" timeGov="0" rowGov="0" customizationAllowed="0">
+    <MetaOtlDTMember modelViewName="SALES" modelMemberName="AMOUNT" sortOrder="-1" displayOrder="6" sortValue="0" />
+    <MetaOtlDTMember modelViewName="Time" modelMemberName="TRANSDATE" sortOrder="-1" displayOrder="5" sortValue="0" />
+    <MetaOtlDTMember modelViewName="MARKET" modelMemberName="STATE" sortOrder="-1" displayOrder="2" sortValue="0" />
+    <MetaOtlDTMember modelViewName="MEASURES" modelMemberName="CHILD" sortOrder="-1" displayOrder="1" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="SKU" sortOrder="-1" displayOrder="3" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SCENARIO" modelMemberName="SCENARIO" sortOrder="-1" displayOrder="4" sortValue="0" />
+    <MetaOtlDTIntersection dimensionName="Measures" memberName="MEASURES.CHILD._1" levelId="-1" generationId="2" />
+    <MetaOtlDTIntersection dimensionName="Product" memberName="PRODUCTDIM.SKU._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Market" memberName="MARKET.STATE._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Scenario" levelId="-1" generationId="-1" />
+  </MetaOtlDTReport>
+  <MetaOtlDTReport name="Product detail" timeGov="0" rowGov="0" customizationAllowed="0">
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="SKU" sortOrder="-1" displayOrder="1" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="SKU_ALIAS" sortOrder="-1" displayOrder="2" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="CAFFEINATED" sortOrder="-1" displayOrder="3" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="OUNCES" sortOrder="-1" displayOrder="5" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="PKGTYPE" sortOrder="-1" displayOrder="6" sortValue="0" />
+    <MetaOtlDTMember modelViewName="PRODUCT" modelMemberName="INTRODATE" sortOrder="-1" displayOrder="4" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="SUPPLIERID" sortOrder="-1" displayOrder="7" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="SUPPLIER_ALIAS" sortOrder="-1" displayOrder="8" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="ADDRESS" sortOrder="-1" displayOrder="9" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="CITY" sortOrder="-1" displayOrder="10" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="STATE" sortOrder="-1" displayOrder="11" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="ZIP" sortOrder="-1" displayOrder="13" sortValue="0" />
+    <MetaOtlDTMember modelViewName="SUPPLIER" modelMemberName="COUNTRY" sortOrder="-1" displayOrder="12" sortValue="0" />
+    <MetaOtlDTIntersection dimensionName="Year" memberName="Time.Month._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Product" memberName="PRODUCTDIM.SKU._2" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Market" levelId="-1" generationId="-1" />
+    <MetaOtlDTIntersection dimensionName="Scenario" levelId="-1" generationId="-1" />
+  </MetaOtlDTReport>
+</MetaOtl>
+

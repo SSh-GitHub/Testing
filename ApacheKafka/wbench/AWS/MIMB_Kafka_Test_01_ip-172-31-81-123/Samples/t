@@ -1,0 +1,28 @@
+Folder PATH listing
+Volume serial number is 00000047 F078:2619
+C:.
+ÃÄÄÄSamples_all_formats
+³   ÃÄÄÄSample_Avro
+³   ÃÄÄÄSample_Csv
+³   ÃÄÄÄSample_Json
+³   ÃÄÄÄSample_orc
+³   ÃÄÄÄSample_Parquet
+³   ÃÄÄÄSample_Xlsx
+³   ÀÄÄÄSample_Xml
+ÃÄÄÄSamples_misc
+³   ÃÄÄÄBook1.xlsx
+³   ÃÄÄÄBusiness Unit Regions With States
+³   ÃÄÄÄClean HRMS Data
+³   ÃÄÄÄCreate Email Address
+³   ÃÄÄÄCustomer Marketing Leads
+³   ÃÄÄÄEmails Reference
+³   ÃÄÄÄMarketing Upload
+³   ÃÄÄÄSamples_misc_01
+³   ÀÄÄÄSample_misc_02
+ÃÄÄÄSamples_SSh
+³   ÃÄÄÄSSh_01
+³   ÀÄÄÄSSh_02
+³       ÀÄÄÄSub_01
+ÀÄÄÄSamples_tiny
+    ÃÄÄÄtest_xml
+    ÀÄÄÄtest_xml_diff

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Model SYSTEM 'model.dtd'>
+
+<Model name="HA TBC Model" desc="Hybrid Analysis Sample Model" accessCode="2" owner="TBC" dataSource="Hybrid" version="6.5.1">
+  <FactView name="HASALES" xCord="267" yCord="215">
+    <ModelViewMember name="PRODUCTID" physicalTableName="TBC.HASALES" physicalColumnName="PRODUCTID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="SALES" physicalTableName="TBC.HASALES" physicalColumnName="SALES" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="TIMEID" physicalTableName="TBC.HASALES" physicalColumnName="TIMEID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="COGS" physicalTableName="TBC.HASALES" physicalColumnName="COGS" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="MARKETING" physicalTableName="TBC.HASALES" physicalColumnName="MARKETING" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="STATEID" physicalTableName="TBC.HASALES" physicalColumnName="STATEID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="SCENARIOID" physicalTableName="TBC.HASALES" physicalColumnName="SCENARIOID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="MISC" physicalTableName="TBC.HASALES" physicalColumnName="MISC" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="PAYROLL" physicalTableName="TBC.HASALES" physicalColumnName="PAYROLL" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="SUM" />
+  </FactView>
+  <ModelDim name="Market" modelDimType="0">
+    <ModelView name="HAMARKET" xCord="268" yCord="374" parentViewName="HASALES">
+      <ModelViewMember name="STATEID" physicalTableName="TBC.HAMARKET" physicalColumnName="STATEID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="STATE" physicalTableName="TBC.HAMARKET" physicalColumnName="STATE" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDAMKTTYPE" physicalTableName="TBC.HAMARKET" physicalColumnName="UDAMKTTYPE" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="REGION" physicalTableName="TBC.HAMARKET" physicalColumnName="REGION" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDAMKTSIZE" physicalTableName="TBC.HAMARKET" physicalColumnName="UDAMKTSIZE" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="POPULATIONID" physicalTableName="TBC.HAMARKET" physicalColumnName="POPULATIONID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="REGIONID" physicalTableName="TBC.HAMARKET" physicalColumnName="REGIONID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Markets">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="REGIONID" viewName="HAMARKET" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="STATEID" viewName="HAMARKET" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+    <ModelProperty type="Dimension_Datasource" instanceNo="1" />
+  </ModelDim>
+  <ModelDim name="Accounts" modelDimType="2">
+    <ModelView name="Accounts" xCord="528" yCord="267" parentViewName="HASALES" />
+    <ModelProperty type="Dimension_Datasource" instanceNo="1" />
+  </ModelDim>
+  <ModelDim name="Time" modelDimType="1">
+    <ModelView name="HATIME" xCord="531" yCord="163" parentViewName="HASALES">
+      <ModelViewMember name="TIMEID" physicalTableName="TBC.HATIME" physicalColumnName="TIMEID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="QUARTER" physicalTableName="TBC.HATIME" physicalColumnName="T_QUARTER" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="MONTH" physicalTableName="TBC.HATIME" physicalColumnName="T_MONTH" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Q-M">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="QUARTER" viewName="HATIME" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="MONTH" viewName="HATIME" transformation="TRIM=Y;PREFIX=PARENT;" />
+    </ModelHierarchy>
+    <ModelProperty type="Dimension_Datasource" instanceNo="1" />
+  </ModelDim>
+  <ModelDim name="Product" modelDimType="0">
+    <ModelView name="HAPRODUCT" xCord="266" yCord="60" parentViewName="HASALES">
+      <ModelViewMember name="FAMILY" physicalTableName="TBC.HAPRODUCT" physicalColumnName="FAMILY" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKU_ALIAS" physicalTableName="TBC.HAPRODUCT" physicalColumnName="SKU_ALIAS" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="FAMILY_ALIAS" physicalTableName="TBC.HAPRODUCT" physicalColumnName="FAMILY_ALIAS" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKU" physicalTableName="TBC.HAPRODUCT" physicalColumnName="SKU" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CONSOLIDATION" physicalTableName="TBC.HAPRODUCT" physicalColumnName="CONSOLIDATION" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="PRODUCTID" physicalTableName="TBC.HAPRODUCT" physicalColumnName="PRODUCTID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SUB_SKU" physicalTableName="TBC.HAPRODUCT" physicalColumnName="SUB_SKU" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Products">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="FAMILY" viewName="HAPRODUCT" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="SKU" viewName="HAPRODUCT" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="3" buildOrder="1" viewMemberName="SUB_SKU" viewName="HAPRODUCT" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+    <ModelProperty type="Dimension_Datasource" instanceNo="1" />
+  </ModelDim>
+  <ModelDim name="Scenario" modelDimType="0">
+    <ModelView name="HASCENARIO" xCord="43" yCord="166" parentViewName="HASALES">
+      <ModelViewMember name="SCENARIOID" physicalTableName="TBC.HASCENARIO" physicalColumnName="SCENARIOID" displayFlag="1" drillThroughType="0" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="CONSOLIDATION" physicalTableName="TBC.HASCENARIO" physicalColumnName="CONSOLIDATION" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SCENARIO" physicalTableName="TBC.HASCENARIO" physicalColumnName="SCENARIO" displayFlag="1" drillThroughType="0" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Scenario">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="SCENARIO" viewName="HASCENARIO" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+    <ModelProperty type="Dimension_Datasource" instanceNo="1" />
+  </ModelDim>
+  <ModelLogicalJoin view1Name="HASALES" view2Name="HAMARKET">
+    <ModelLogicalJoinDetail member1Name="STATEID" member2Name="STATEID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="HASALES" view2Name="HATIME">
+    <ModelLogicalJoinDetail member1Name="TIMEID" member2Name="TIMEID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="HASALES" view2Name="HAPRODUCT">
+    <ModelLogicalJoinDetail member1Name="PRODUCTID" member2Name="PRODUCTID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="HASALES" view2Name="HASCENARIO">
+    <ModelLogicalJoinDetail member1Name="SCENARIOID" member2Name="SCENARIOID" />
+  </ModelLogicalJoin>
+  <ModelProperty type="Save_Password" staticValue="0" instanceNo="1" />
+  <ModelProperty type="Time_In_Ticks" staticValue="1015883987" instanceNo="1" />
+  <ModelProperty type="Version_Identifier" staticValue="6500" instanceNo="1" />
+</Model>
+

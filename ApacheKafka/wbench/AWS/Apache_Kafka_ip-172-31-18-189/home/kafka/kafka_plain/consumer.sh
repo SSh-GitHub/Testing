@@ -1,0 +1,1 @@
+./kafka_2.11-2.3.0/bin/kafka-console-consumer.sh --consumer.config /home/kafka/kafka_2.11-2.3.0/config/consumer.properties --bootstrap-server ip-172-31-18-189.ec2.internal:9092 --from-beginning --topic topic_test_01

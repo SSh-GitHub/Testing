@@ -1,0 +1,1 @@
+%JAVA_HOME%\java -jar avro-tools-1.7.1.jar fromjson --schema-file %1.avsc %1.json >%1.avro

@@ -1,0 +1,17 @@
+[Unit]
+Description=Apache Kafka server (kafka_ssl)
+Documentation=http://kafka.apache.org/documentation.html
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target zookeeper_ssl.service
+
+[Service]
+Type=simple
+User=kafka
+Group=sudo
+WorkingDirectory=/home/kafka/kafka_ssl/
+ExecStart=/home/kafka/kafka_ssl/kafka-start.sh
+ExecStop=/home/kafka/kafka_ssl/kafka-stop.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=kafka_ssl

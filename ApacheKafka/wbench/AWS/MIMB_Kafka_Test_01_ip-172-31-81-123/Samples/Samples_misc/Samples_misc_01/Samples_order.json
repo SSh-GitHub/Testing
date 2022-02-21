@@ -1,0 +1,174 @@
+[
+{
+	"OrderDate": "7/7/2001 12:00:00 AM",
+	"ShipDate": "7/8/2001 12:00:00 AM",
+
+	"TotalProductCost": 158.43,
+	"TaxAmt": 15.00,
+	"Freight": 40.43,
+
+	"CarrierTrackingNumber": "C261-441D-AZ5",
+				
+	"Employee": {
+			"Person" : {
+				"FirstName": "Jon",
+				"LastName": "Yang",
+				"BirthDate": "1966-04-08",
+				"MaritalStatus": "M",
+				"Gender": "M",
+				"TotalChildren": 1,
+				"EmailAddress": "jon24@adventure-works.com",
+				"Phone": "(11) 500 555-0162",
+				"Address": {
+					"Country": "United States",
+					"Region": "North America",
+					"City": "New York",
+					"Street": "32 Fulton Street",
+					"Zip": 10019
+				}
+			},
+			
+			"BaseRate": 2500,
+			"EmergencyContactPhone": ["520 555-0124", "(11) 520 567-0102"],
+			"VacationHours": [10,5,16,1,2,3,12],
+			"SickHours": 48,
+			
+			"Department": {
+				
+				"DepartmentName": "Sales Department",
+				"Address" : {
+					"Country": "Australia",
+					"Region": "Pacific",
+					"City": "Alexandria",
+					"Street": "4 Campbell Rd",
+					"Zip": 2015
+				}
+				
+			}
+	},					
+	"Customer" : {
+		"NumberCarsOwned": 1,
+		"Person": {
+			"FirstName": "Jon",
+			"LastName": "Yang",
+			"BirthDate": "1966-04-08",
+			"MaritalStatus": "M",
+			"Gender": "M",
+			"TotalChildren": 1,
+			"EmailAddress": "jon24@adventure-works.com",
+			"Phone": "(11) 500 555-0162",
+			"Address": {
+				"Country": "United States",
+				"Region": "North America",
+				"City": "New York",
+				"Street": "32 Fulton Street",
+				"Zip": 10019
+			}
+		}
+	},
+	
+	"Product": {
+		"ProductName": "Sport-100 Helmet",
+		"Price": 13.36,
+		"Description": "Sport-100"
+	}
+}
+,
+{
+	"OrderDate": "17/7/2001 12:00:00 AM",
+	"ShipDate": "17/8/2001 12:00:00 AM",
+
+	"TotalProductCost": 300.99,
+	"TaxAmt": 7.00,
+	"Freight": 30.00,
+
+	"CarrierTrackingNumber": "C261-431D-AK5",
+				
+	"Employee" : {
+			"Person" : {
+				"FirstName": "Jon",
+				"LastName": "Yang",
+				"BirthDate": "1966-04-08",
+				"MaritalStatus": "M",
+				"Gender": "M",
+				"TotalChildren": 1,
+				"EmailAddress": "jon24@adventure-works.com",
+				"Phone": "(11) 500 555-0162",
+				"Address": {
+					"Country": "United States",
+					"Region": "North America",
+					"City": "New York",
+					"Street": "32 Fulton Street",
+					"Zip": 10019
+				}
+			},
+			
+			"BaseRate": 2500,
+			"EmergencyContactPhone": "(11) 520 555-0124",
+			"VacationHours": 76,
+			"SickHours": 48,
+			
+			"Department": {
+				"HeadOfDepartment" : {
+					"Title": "Mr.",
+					"FirstName": "Eugene",
+					"LastName": "Huang",
+					"BirthDate": "1965-05-14",
+					"MaritalStatus": "S",
+					"Gender": "M",
+					"TotalChildren": 2,
+					"EmailAddress": "eugene10@adventure-works.com",
+					"Phone": "(11) 500 555-0110",
+					"Address": {
+						"Country": "Australia",
+						"Region": "Pacific",
+						"City": "Alexandria",
+						"Street": "4 Campbell Rd",
+						"Zip": 2015
+					}	
+				},
+				
+				"DepartmentName": "Sales Department",
+				"Address" : {
+					"Country": "Australia",
+					"Region": "Pacific",
+					"City": "Alexandria",
+					"Street": "4 Campbell Rd",
+					"Zip": 2015
+				}
+				
+			}
+	},			
+	"Customer": 	{
+		"NumberCarsOwned": 2,
+		"Person": {
+			"Title": "Mr.",
+			"FirstName": "Eugene",
+			"LastName": "Huang",
+			"BirthDate": "1965-05-14",
+			"MaritalStatus": "S",
+			"Gender": "M",
+			"TotalChildren": 2,
+			"EmailAddress": "eugene10@adventure-works.com",
+			"Phone": "(11) 500 555-0110",
+			"Address": {
+				"Country": "Australia",
+				"Region": "Pacific",
+				"City": "Alexandria",
+				"Street": "4 Campbell Rd",
+				"Zip": 2015
+			}	
+		}
+	},
+	
+	"OrderDetails": [{
+		"ProductName": "Sport-100 Helmet",
+		"Price": 13.36,
+		"Description": "Sport-100"
+	}, {
+		"ProductName": "Sport-200 Helmet",
+		"Price": 13.36,
+		"Description": "Sport-200"
+	}]
+}	
+]

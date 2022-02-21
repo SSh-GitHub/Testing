@@ -1,0 +1,22 @@
+{
+  "name": "SShRecord",
+  "type": "record",
+  "fields": [
+    {
+      "name": "col_1",
+      "type": "string"
+    },
+    {
+      "name": "col_2",
+      "type": "string"
+    },
+    {
+      "name": "col_3",
+      "type": "string"
+    },
+    {
+      "name": "col_4",
+      "type": "string"
+    }
+  ]
+}

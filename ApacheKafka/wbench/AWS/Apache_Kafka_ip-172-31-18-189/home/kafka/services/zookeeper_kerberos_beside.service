@@ -1,0 +1,17 @@
+[Unit]
+Description=Apache Zookeeper server (zookeeper_kerberos)
+Documentation=http://zookeeper.apache.org
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+User=kafka
+Group=sudo
+WorkingDirectory=/home/kafka/kafka_kerberos_beside/
+ExecStart=/home/kafka/kafka_kerberos_beside/zookeeper-start.sh
+ExecStop=/home/kafka/kafka_kerberos_beside/zookeepe-stop.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=zookeeper_kerberos_beside

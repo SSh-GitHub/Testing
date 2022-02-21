@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Model SYSTEM 'model.dtd'>
+
+<Model name="TBC Model" desc="Analytic Integration Services model" accessCode="2" owner="hyperion" dataSource="HYPERIONEIS" version="9.3.0">
+  <FactView name="SALES" xCord="342" yCord="284">
+    <ModelViewMember name="STATEID" physicalTableName="TBC.SALES" physicalColumnName="STATEID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="PRODUCTID" physicalTableName="TBC.SALES" physicalColumnName="PRODUCTID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="SCENARIOID" physicalTableName="TBC.SALES" physicalColumnName="SCENARIOID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="MEASURESID" physicalTableName="TBC.SALES" physicalColumnName="MEASURESID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="SUPPLIERID" physicalTableName="TBC.SALES" physicalColumnName="SUPPLIERID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+    <ModelViewMember name="TRANSDATE" physicalTableName="TBC.SALES" physicalColumnName="TRANSDATE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="DATETIME" aggregateType="NONE" />
+    <ModelViewMember name="AMOUNT" physicalTableName="TBC.SALES" physicalColumnName="AMOUNT" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="SUM" />
+  </FactView>
+  <ModelDim name="Year" modelDimType="1">
+    <ModelView name="Time" xCord="614" yCord="219" parentViewName="SALES">
+      <ModelViewMember name="STATEID" physicalTableName="TBC.SALES" physicalColumnName="STATEID" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="PRODUCTID" physicalTableName="TBC.SALES" physicalColumnName="PRODUCTID" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SCENARIOID" physicalTableName="TBC.SALES" physicalColumnName="SCENARIOID" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="MEASURESID" physicalTableName="TBC.SALES" physicalColumnName="MEASURESID" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SUPPLIERID" physicalTableName="TBC.SALES" physicalColumnName="SUPPLIERID" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="TRANSDATE" physicalTableName="TBC.SALES" physicalColumnName="TRANSDATE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="DATETIME" aggregateType="NONE" />
+      <ModelViewMember name="AMOUNT" physicalTableName="TBC.SALES" physicalColumnName="AMOUNT" displayFlag="0" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="Quarter" physicalTableName="TBC.SALES" physicalColumnName="TRANSDATE" displayFlag="1" drillThroughType="0" extractionRule="DATEPART(TBC.SALES.TRANSDATE,Q)" dataType="_T__Q" aggregateType="NONE" />
+      <ModelViewMember name="Month" physicalTableName="TBC.SALES" physicalColumnName="TRANSDATE" displayFlag="1" drillThroughType="0" extractionRule="DATEPART(TBC.SALES.TRANSDATE, MMM)" dataType="_T__M" aggregateType="NONE" />
+      <ModelViewMember name="MonthMM" physicalTableName="TBC.SALES" physicalColumnName="TRANSDATE" displayFlag="1" drillThroughType="0" extractionRule="DATEPART(TBC.SALES.TRANSDATE, MM)" dataType="_T__M" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Quarter_Month">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="Quarter" viewName="Time" transformation="TRIM=Y;PREFIX=&quot;Qtr&quot;;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="Month" viewName="Time" transformation="TRIM=Y;">
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="Time" memberName="MonthMM" instanceNo="1" />
+      </ModelHierarchyMember>
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelDim name="Market" modelDimType="0">
+    <ModelView name="MARKET" xCord="343" yCord="394" parentViewName="SALES">
+      <ModelViewMember name="STATEID" physicalTableName="TBC.MARKET" physicalColumnName="STATEID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="REGIONID" physicalTableName="TBC.MARKET" physicalColumnName="REGIONID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="STATE" physicalTableName="TBC.MARKET" physicalColumnName="STATE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDAMKTSIZE" physicalTableName="TBC.MARKET" physicalColumnName="UDAMKTSIZE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDAMKTTYPE" physicalTableName="TBC.MARKET" physicalColumnName="UDAMKTTYPE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="POPULATIONID" physicalTableName="TBC.MARKET" physicalColumnName="POPULATIONID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+    </ModelView>
+    <ModelView name="POPULATION" xCord="231" yCord="497" parentViewName="MARKET">
+      <ModelViewMember name="POPULATIONID" physicalTableName="TBC.POPULATION" physicalColumnName="POPULATIONID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="POPGROUP" physicalTableName="TBC.POPULATION" physicalColumnName="POPGROUP" displayFlag="1" drillThroughType="2" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="POPULATION" physicalTableName="TBC.POPULATION" physicalColumnName="POPULATION" displayFlag="1" drillThroughType="2" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="POPULATION_ALIAS" physicalTableName="TBC.POPULATION" physicalColumnName="POPULATION_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelView name="REGION" xCord="460" yCord="498" parentViewName="MARKET">
+      <ModelViewMember name="REGIONID" physicalTableName="TBC.REGION" physicalColumnName="REGIONID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="REGION" physicalTableName="TBC.REGION" physicalColumnName="REGION" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDA" physicalTableName="TBC.REGION" physicalColumnName="UDA" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="DIRECTOR" physicalTableName="TBC.REGION" physicalColumnName="DIRECTOR" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Market">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="REGION" viewName="REGION" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="STATE" viewName="MARKET" transformation="TRIM=Y;">
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="MARKET" memberName="STATEID" instanceNo="1" />
+      </ModelHierarchyMember>
+    </ModelHierarchy>
+    <ModelHierarchy name="Director">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="DIRECTOR" viewName="REGION" transformation="TRIM=Y;" />
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="STATE" viewName="MARKET" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelDim name="Measures" modelDimType="0">
+    <ModelView name="MEASURES" xCord="615" yCord="354" parentViewName="SALES">
+      <ModelViewMember name="SORTKEY" physicalTableName="TBC.MEASURES" physicalColumnName="SORTKEY" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="MEASURESID" physicalTableName="TBC.MEASURES" physicalColumnName="MEASURESID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="PARENT" physicalTableName="TBC.MEASURES" physicalColumnName="PARENT" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CHILD" physicalTableName="TBC.MEASURES" physicalColumnName="CHILD" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="MEASURES_ALIAS" physicalTableName="TBC.MEASURES" physicalColumnName="MEASURES_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CONSOLIDATION" physicalTableName="TBC.MEASURES" physicalColumnName="CONSOLIDATION" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="TWOPASSCALC" physicalTableName="TBC.MEASURES" physicalColumnName="TWOPASSCALC" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="STORAGE" physicalTableName="TBC.MEASURES" physicalColumnName="STORAGE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="VARIANCEREPORTING" physicalTableName="TBC.MEASURES" physicalColumnName="VARIANCEREPORTING" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="TIMEBALANCE" physicalTableName="TBC.MEASURES" physicalColumnName="TIMEBALANCE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKIP" physicalTableName="TBC.MEASURES" physicalColumnName="SKIP" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="UDA" physicalTableName="TBC.MEASURES" physicalColumnName="UDA" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="FORMULA" physicalTableName="TBC.MEASURES" physicalColumnName="FORMULA" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="COMMENT_ESSBASE" physicalTableName="TBC.MEASURES" physicalColumnName="COMMENT_ESSBASE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelPhysicalJoin table1Name="TBC.MEASURES" table2Name="TBC.MEASURES">
+        <ModelPhysicalJoinDetail column1Name="CHILD" column2Name="PARENT" />
+      </ModelPhysicalJoin>
+    </ModelView>
+    <ModelHierarchy name="Measures">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="CHILD" viewName="MEASURES" transformation="TRIM=Y;">
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="MEASURES" memberName="SORTKEY" instanceNo="1" />
+      </ModelHierarchyMember>
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelDim name="Product" modelDimType="0">
+    <ModelView name="PRODUCT" xCord="341" yCord="178" parentViewName="SALES">
+      <ModelViewMember name="PRODUCTID" physicalTableName="TBC.PRODUCT" physicalColumnName="PRODUCTID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="FAMILYID" physicalTableName="TBC.PRODUCT" physicalColumnName="FAMILYID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SKU" physicalTableName="TBC.PRODUCT" physicalColumnName="SKU" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKU_ALIAS" physicalTableName="TBC.PRODUCT" physicalColumnName="SKU_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CAFFEINATED" physicalTableName="TBC.PRODUCT" physicalColumnName="CAFFEINATED" displayFlag="1" drillThroughType="2" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="OUNCES" physicalTableName="TBC.PRODUCT" physicalColumnName="OUNCES" displayFlag="1" drillThroughType="2" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="PKGTYPE" physicalTableName="TBC.PRODUCT" physicalColumnName="PKGTYPE" displayFlag="1" drillThroughType="2" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="INTRODATE" physicalTableName="TBC.PRODUCT" physicalColumnName="INTRODATE" displayFlag="1" drillThroughType="2" extractionRule="" dataType="DATETIME" aggregateType="NONE" />
+    </ModelView>
+    <ModelView name="FAMILY" xCord="231" yCord="69" parentViewName="PRODUCT">
+      <ModelViewMember name="FAMILYID" physicalTableName="TBC.FAMILY" physicalColumnName="FAMILYID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="FAMILY" physicalTableName="TBC.FAMILY" physicalColumnName="FAMILY" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="FAMILY_ALIAS" physicalTableName="TBC.FAMILY" physicalColumnName="FAMILY_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="INTRODATE" physicalTableName="TBC.FAMILY" physicalColumnName="INTRODATE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="DATETIME" aggregateType="NONE" />
+    </ModelView>
+    <ModelView name="PRODUCTDIM" xCord="455" yCord="68" parentViewName="PRODUCT">
+      <ModelViewMember name="FAMILY" physicalTableName="TBC.PRODUCTDIM" physicalColumnName="FAMILY" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="FAMILY_ALIAS" physicalTableName="TBC.PRODUCTDIM" physicalColumnName="FAMILY_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CONSOLIDATION" physicalTableName="TBC.PRODUCTDIM" physicalColumnName="CONSOLIDATION" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKU" physicalTableName="TBC.PRODUCTDIM" physicalColumnName="SKU" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="SKU_ALIAS" physicalTableName="TBC.PRODUCTDIM" physicalColumnName="SKU_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Product">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="FAMILY" viewName="PRODUCTDIM" filterPredicate="PRODUCTDIM.FAMILY in (&apos;100&apos;,&apos;200&apos;,&apos;300&apos;,&apos;400&apos;,&apos;Diet&apos;)" transformation="TRIM=Y;">
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="PRODUCTDIM" memberName="FAMILY" instanceNo="1" />
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="PRODUCTDIM" memberName="SKU" instanceNo="1" />
+      </ModelHierarchyMember>
+      <ModelHierarchyMember levelNumber="2" buildOrder="1" viewMemberName="SKU" viewName="PRODUCTDIM" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelDim name="Scenario" modelDimType="0">
+    <ModelView name="SCENARIO" xCord="45" yCord="357" parentViewName="SALES">
+      <ModelViewMember name="SCENARIOID" physicalTableName="TBC.SCENARIO" physicalColumnName="SCENARIOID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SCENARIO" physicalTableName="TBC.SCENARIO" physicalColumnName="SCENARIO" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CONSOLIDATION" physicalTableName="TBC.SCENARIO" physicalColumnName="CONSOLIDATION" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Scenario">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="SCENARIO" viewName="SCENARIO" transformation="TRIM=Y;">
+        <ModelProperty type="Sort_Ascending" staticValue="" viewName="SCENARIO" memberName="SCENARIOID" instanceNo="1" />
+      </ModelHierarchyMember>
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelDim name="Supplier" modelDimType="0">
+    <ModelView name="SUPPLIER" xCord="45" yCord="210" parentViewName="SALES">
+      <ModelViewMember name="SUPPLIERID" physicalTableName="TBC.SUPPLIER" physicalColumnName="SUPPLIERID" displayFlag="1" drillThroughType="0" extractionRule="" dataType="NUMERIC" aggregateType="NONE" />
+      <ModelViewMember name="SUPPLIER_ALIAS" physicalTableName="TBC.SUPPLIER" physicalColumnName="SUPPLIER_ALIAS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="ADDRESS" physicalTableName="TBC.SUPPLIER" physicalColumnName="ADDRESS" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="CITY" physicalTableName="TBC.SUPPLIER" physicalColumnName="CITY" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="STATE" physicalTableName="TBC.SUPPLIER" physicalColumnName="STATE" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="ZIP" physicalTableName="TBC.SUPPLIER" physicalColumnName="ZIP" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+      <ModelViewMember name="COUNTRY" physicalTableName="TBC.SUPPLIER" physicalColumnName="COUNTRY" displayFlag="1" drillThroughType="0" extractionRule="" dataType="CHAR" aggregateType="NONE" />
+    </ModelView>
+    <ModelHierarchy name="Supplier">
+      <ModelHierarchyMember levelNumber="1" buildOrder="1" viewMemberName="SUPPLIER_ALIAS" viewName="SUPPLIER" transformation="TRIM=Y;" />
+    </ModelHierarchy>
+  </ModelDim>
+  <ModelLogicalJoin view1Name="SALES" view2Name="Time">
+    <ModelLogicalJoinDetail member1Name="TRANSDATE" member2Name="TRANSDATE" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="SALES" view2Name="MARKET">
+    <ModelLogicalJoinDetail member1Name="STATEID" member2Name="STATEID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="MARKET" view2Name="POPULATION">
+    <ModelLogicalJoinDetail member1Name="POPULATIONID" member2Name="POPULATIONID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="MARKET" view2Name="REGION">
+    <ModelLogicalJoinDetail member1Name="REGIONID" member2Name="REGIONID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="SALES" view2Name="MEASURES">
+    <ModelLogicalJoinDetail member1Name="MEASURESID" member2Name="MEASURESID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="SALES" view2Name="PRODUCT">
+    <ModelLogicalJoinDetail member1Name="PRODUCTID" member2Name="PRODUCTID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="PRODUCT" view2Name="FAMILY">
+    <ModelLogicalJoinDetail member1Name="FAMILYID" member2Name="FAMILYID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="PRODUCT" view2Name="PRODUCTDIM">
+    <ModelLogicalJoinDetail member1Name="SKU" member2Name="SKU" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="SALES" view2Name="SCENARIO">
+    <ModelLogicalJoinDetail member1Name="SCENARIOID" member2Name="SCENARIOID" />
+  </ModelLogicalJoin>
+  <ModelLogicalJoin view1Name="SALES" view2Name="SUPPLIER">
+    <ModelLogicalJoinDetail member1Name="SUPPLIERID" member2Name="SUPPLIERID" />
+  </ModelLogicalJoin>
+</Model>
+

@@ -1,0 +1,765 @@
+[2019-08-11 12:44:02,631] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2019-08-11 12:44:03,149] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2019-08-11 12:44:03,150] INFO starting (kafka.server.KafkaServer)
+[2019-08-11 12:44:03,152] INFO Connecting to zookeeper on localhost:2183 (kafka.server.KafkaServer)
+[2019-08-11 12:44:03,181] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2183. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 12:44:03,186] INFO Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:host.name=ip-172-31-18-189 (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.version=11.0.4 (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.vendor=Ubuntu (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.class.path=/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/activation-1.1.1.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/guava-20.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jackson-module-scala_2.11-2.9.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-streams-scala_2.11-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka_2.11-2.3.0-sources.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/kafka_2.11-2.3.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/paranamer-2.8.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/scala-library-2.11.12.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/scala-logging_2.11-3.9.0.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/scala-reflect-2.11.12.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/zkclient-0.11.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/kafka/kafka_plain/kafka_2.11-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,186] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:os.version=4.15.0-1044-aws (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:user.name=kafka (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:user.home=/home/kafka (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,187] INFO Client environment:user.dir=/home/kafka/kafka_plain (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,189] INFO Initiating client connection, connectString=localhost:2183 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@49c66ade (org.apache.zookeeper.ZooKeeper)
+[2019-08-11 12:44:03,202] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 12:44:03,206] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 12:44:03,209] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 12:44:03,223] INFO Socket connection established to localhost/127.0.0.1:2183, initiating session (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 12:44:03,220] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 12:44:03,245] INFO Session establishment complete on server localhost/127.0.0.1:2183, sessionid = 0x1000002d3f70000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 12:44:03,245] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 12:44:03,562] INFO Cluster ID = L3X1c7rFRaybfkq50Q47bg (kafka.server.KafkaServer)
+[2019-08-11 12:44:03,643] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 2
+	broker.id.generation.enable = true
+	broker.rack = null
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 2.3-IV1
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = SASL_PLAINTEXT://:9094
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /var/tmp/kafka/kafka_plain/kafka_data/
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 2.3-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [PLAIN]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism.inter.broker.protocol = PLAIN
+	sasl.server.callback.handler.class = null
+	security.inter.broker.protocol = SASL_PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = 
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = [DEFAULT]
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2183
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2019-08-11 12:44:03,658] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 2
+	broker.id.generation.enable = true
+	broker.rack = null
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 2.3-IV1
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = SASL_PLAINTEXT://:9094
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /var/tmp/kafka/kafka_plain/kafka_data/
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 2.3-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [PLAIN]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism.inter.broker.protocol = PLAIN
+	sasl.server.callback.handler.class = null
+	security.inter.broker.protocol = SASL_PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = 
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = [DEFAULT]
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2183
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2019-08-11 12:44:03,696] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-08-11 12:44:03,701] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-08-11 12:44:03,706] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-08-11 12:44:03,758] INFO Loading logs. (kafka.log.LogManager)
+[2019-08-11 12:44:03,841] INFO [Log partition=Sample_Xlsx-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 1 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,858] INFO [ProducerStateManager partition=Sample_Xlsx-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Xlsx-0/00000000000000000001.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,870] INFO [Log partition=Sample_Xlsx-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 1 in 88 ms (kafka.log.Log)
+[2019-08-11 12:44:03,885] INFO [Log partition=Sample_Avro-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 2 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,885] INFO [ProducerStateManager partition=Sample_Avro-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Avro-0/00000000000000000002.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,893] INFO [Log partition=Sample_Avro-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 2 in 16 ms (kafka.log.Log)
+[2019-08-11 12:44:03,906] INFO [Log partition=Sample_Parquet-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 2 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,906] INFO [ProducerStateManager partition=Sample_Parquet-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Parquet-0/00000000000000000002.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,914] INFO [Log partition=Sample_Parquet-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 2 in 18 ms (kafka.log.Log)
+[2019-08-11 12:44:03,925] INFO [Log partition=Sample_Csv-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 4 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,926] INFO [ProducerStateManager partition=Sample_Csv-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Csv-0/00000000000000000004.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,934] INFO [Log partition=Sample_Csv-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 4 in 17 ms (kafka.log.Log)
+[2019-08-11 12:44:03,949] INFO [Log partition=Sample_Json-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 3 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,950] INFO [ProducerStateManager partition=Sample_Json-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Json-0/00000000000000000003.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,958] INFO [Log partition=Sample_Json-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 3 in 21 ms (kafka.log.Log)
+[2019-08-11 12:44:03,969] INFO [Log partition=Sample_Xml-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 1 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,969] INFO [ProducerStateManager partition=Sample_Xml-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_Xml-0/00000000000000000001.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,977] INFO [Log partition=Sample_Xml-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 1 in 16 ms (kafka.log.Log)
+[2019-08-11 12:44:03,987] INFO [Log partition=Sample_orc-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Loading producer state till offset 2 with message format version 2 (kafka.log.Log)
+[2019-08-11 12:44:03,988] INFO [ProducerStateManager partition=Sample_orc-0] Loading producer state from snapshot file '/var/tmp/kafka/kafka_plain/kafka_data/Sample_orc-0/00000000000000000002.snapshot' (kafka.log.ProducerStateManager)
+[2019-08-11 12:44:03,996] INFO [Log partition=Sample_orc-0, dir=/var/tmp/kafka/kafka_plain/kafka_data] Completed load of log with 1 segments, log start offset 0 and log end offset 2 in 16 ms (kafka.log.Log)
+[2019-08-11 12:44:04,000] INFO Logs loading complete in 240 ms. (kafka.log.LogManager)
+[2019-08-11 12:44:04,010] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2019-08-11 12:44:04,011] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2019-08-11 12:44:04,466] INFO Awaiting socket connections on 0.0.0.0:9094. (kafka.network.Acceptor)
+[2019-08-11 12:44:04,634] INFO Successfully logged in. (org.apache.kafka.common.security.authenticator.AbstractLogin)
+[2019-08-11 12:44:04,681] INFO [SocketServer brokerId=2] Created data-plane acceptor and processors for endpoint : EndPoint(null,9094,ListenerName(SASL_PLAINTEXT),SASL_PLAINTEXT) (kafka.network.SocketServer)
+[2019-08-11 12:44:04,682] INFO [SocketServer brokerId=2] Started 1 acceptor threads for data-plane (kafka.network.SocketServer)
+[2019-08-11 12:44:04,707] INFO [ExpirationReaper-2-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,718] INFO [ExpirationReaper-2-ElectPreferredLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,715] INFO [ExpirationReaper-2-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,715] INFO [ExpirationReaper-2-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,735] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2019-08-11 12:44:04,784] INFO Creating /brokers/ids/2 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2019-08-11 12:44:04,803] INFO Stat of the created znode at /brokers/ids/2 is: 105,105,1565527444796,1565527444796,1,0,0,72057606184042496,201,0,105
+ (kafka.zk.KafkaZkClient)
+[2019-08-11 12:44:04,803] INFO Registered broker 2 at path /brokers/ids/2 with addresses: ArrayBuffer(EndPoint(ip-172-31-18-189,9094,ListenerName(SASL_PLAINTEXT),SASL_PLAINTEXT)), czxid (broker epoch): 105 (kafka.zk.KafkaZkClient)
+[2019-08-11 12:44:04,883] INFO [ExpirationReaper-2-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,892] INFO [ExpirationReaper-2-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,893] INFO [ExpirationReaper-2-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-08-11 12:44:04,926] INFO [GroupCoordinator 2]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2019-08-11 12:44:04,931] INFO [GroupCoordinator 2]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2019-08-11 12:44:04,963] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 31 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 12:44:04,971] INFO [ProducerId Manager 2]: Acquired new producerId block (brokerId:2,blockStartProducerId:2000,blockEndProducerId:2999) by writing to Zk with path version 3 (kafka.coordinator.transaction.ProducerIdManager)
+[2019-08-11 12:44:05,038] INFO [TransactionCoordinator id=2] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2019-08-11 12:44:05,050] INFO [TransactionCoordinator id=2] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2019-08-11 12:44:05,056] INFO [Transaction Marker Channel Manager 2]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2019-08-11 12:44:05,146] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2019-08-11 12:44:05,208] INFO [SocketServer brokerId=2] Started data-plane processors for 1 acceptors (kafka.network.SocketServer)
+[2019-08-11 12:44:05,211] INFO Kafka version: 2.3.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2019-08-11 12:44:05,211] INFO Kafka commitId: fc1aaa116b661c8a (org.apache.kafka.common.utils.AppInfoParser)
+[2019-08-11 12:44:05,212] INFO Kafka startTimeMs: 1565527445209 (org.apache.kafka.common.utils.AppInfoParser)
+[2019-08-11 12:44:05,213] INFO [KafkaServer id=2] started (kafka.server.KafkaServer)
+[2019-08-11 12:44:05,280] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(Sample_Xml-0, Sample_Avro-0, Sample_Xlsx-0, Sample_Parquet-0, Sample_Csv-0, Sample_orc-0, Sample_Json-0) (kafka.server.ReplicaFetcherManager)
+[2019-08-11 12:44:05,291] INFO Replica loaded for partition Sample_Json-0 with initial high watermark 3 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,294] INFO [Partition Sample_Json-0 broker=2] Sample_Json-0 starts at Leader Epoch 0 from offset 3. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,309] INFO Replica loaded for partition Sample_orc-0 with initial high watermark 2 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,310] INFO [Partition Sample_orc-0 broker=2] Sample_orc-0 starts at Leader Epoch 0 from offset 2. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,313] INFO Replica loaded for partition Sample_Avro-0 with initial high watermark 2 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,314] INFO [Partition Sample_Avro-0 broker=2] Sample_Avro-0 starts at Leader Epoch 0 from offset 2. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,316] INFO Replica loaded for partition Sample_Csv-0 with initial high watermark 4 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,317] INFO [Partition Sample_Csv-0 broker=2] Sample_Csv-0 starts at Leader Epoch 0 from offset 4. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,324] INFO Replica loaded for partition Sample_Xlsx-0 with initial high watermark 1 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,324] INFO [Partition Sample_Xlsx-0 broker=2] Sample_Xlsx-0 starts at Leader Epoch 0 from offset 1. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,327] INFO Replica loaded for partition Sample_Parquet-0 with initial high watermark 2 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,328] INFO [Partition Sample_Parquet-0 broker=2] Sample_Parquet-0 starts at Leader Epoch 0 from offset 2. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:44:05,331] INFO Replica loaded for partition Sample_Xml-0 with initial high watermark 1 (kafka.cluster.Replica)
+[2019-08-11 12:44:05,332] INFO [Partition Sample_Xml-0 broker=2] Sample_Xml-0 starts at Leader Epoch 0 from offset 1. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2019-08-11 12:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 13:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 14:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 15:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 16:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 17:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 18:54:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:04:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:14:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:24:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:34:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:44:04,931] INFO [GroupMetadataManager brokerId=2] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-08-11 19:51:12,243] INFO Terminating process due to signal SIGHUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2019-08-11 19:51:12,363] INFO Terminating process due to signal SIGTERM (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2019-08-11 19:51:12,287] INFO [KafkaServer id=2] shutting down (kafka.server.KafkaServer)
+[2019-08-11 19:51:12,397] INFO [KafkaServer id=2] Starting controlled shutdown (kafka.server.KafkaServer)
+[2019-08-11 19:51:12,790] WARN Session 0x1000002d3f70000 for server localhost/127.0.0.1:2183, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[2019-08-11 19:51:12,894] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:12,894] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:14,177] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:14,177] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:14,177] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:14,179] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:14,280] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:16,034] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:16,034] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:16,034] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:16,034] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:18,090] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:18,090] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:18,090] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:18,090] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:20,001] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:20,002] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:20,002] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:20,002] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:21,493] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:21,493] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:21,493] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:21,493] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:23,289] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:23,289] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:23,289] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:23,289] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:24,509] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:24,509] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:24,509] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:24,510] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:26,345] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:26,345] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:26,346] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:26,346] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:27,657] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:27,657] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:27,657] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:27,657] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:28,760] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:28,760] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:28,760] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:28,760] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:29,963] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:29,963] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:29,963] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:29,964] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:31,082] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:31,082] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:31,083] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:31,083] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:32,801] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:32,801] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:32,801] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:32,801] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:34,117] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:34,117] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:34,117] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:34,117] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:35,345] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:35,345] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:35,345] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:35,345] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:36,680] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:36,680] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:36,680] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:36,681] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:38,283] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:38,283] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:38,284] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:38,284] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:39,462] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:39,462] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:39,462] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:39,462] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:41,004] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:41,004] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:41,004] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:41,004] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:42,487] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:42,487] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:42,488] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:42,488] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:44,474] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:44,475] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:44,475] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:44,475] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:46,314] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:46,314] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:46,314] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:46,314] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:48,207] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:48,207] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:48,207] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:48,207] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:50,163] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:50,163] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:50,164] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:50,164] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:52,044] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:52,044] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:52,045] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:52,045] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:53,996] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:53,996] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:53,996] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:53,996] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:55,183] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:55,183] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:55,183] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:55,183] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:56,422] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:56,422] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:56,422] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:56,422] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:58,494] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:58,494] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:51:58,494] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:51:58,495] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:00,322] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:00,322] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:00,322] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:00,322] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:01,438] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:01,438] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:01,438] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:01,438] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:03,139] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:03,139] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:03,139] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:03,139] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:04,300] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:04,300] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:04,300] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:04,300] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:06,074] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:06,074] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:06,074] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:06,075] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:08,042] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:08,043] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:08,043] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:08,043] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:09,564] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:09,564] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:09,564] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:09,564] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:10,912] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:10,912] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:10,912] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:10,912] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:12,903] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:12,903] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:12,903] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:12,904] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:14,827] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:14,828] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:14,828] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:14,828] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:16,890] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:16,890] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:16,890] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:16,890] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:18,917] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:18,917] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:18,917] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:18,918] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:20,944] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:20,944] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:20,944] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:20,944] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:22,765] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:22,765] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:22,766] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:22,766] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:24,096] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:24,097] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:24,097] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:24,097] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:25,378] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:25,378] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:25,378] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:25,378] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:26,933] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:26,933] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:26,933] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:26,933] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:28,151] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:28,151] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:28,151] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:28,151] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:30,026] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:30,026] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:30,026] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:30,027] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:31,997] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:31,997] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:31,997] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:31,997] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:33,923] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:33,923] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:33,923] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:33,923] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:35,735] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:35,735] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:35,735] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:35,735] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:36,884] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:36,884] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:36,885] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:36,885] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:37,992] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:37,992] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:37,992] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:37,993] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:40,092] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:40,092] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:40,092] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:40,092] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:41,323] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/home/kafka/kafka_plain/jaas_kafka_plain.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:41,323] INFO Opening socket connection to server localhost/127.0.0.1:2183 (org.apache.zookeeper.ClientCnxn)
+[2019-08-11 19:52:41,323] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient)
+[2019-08-11 19:52:41,323] INFO Socket error occurred: localhost/127.0.0.1:2183: Connection refused (org.apache.zookeeper.ClientCnxn)

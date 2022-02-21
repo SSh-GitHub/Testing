@@ -1,0 +1,129 @@
+E:\User\Installed\MIMB\MIMB-1001\jre\bin>kinit -J-Dsun.security.krb5.debug=true -k -t E:\User\Installed\Drivers\Cloudera_Kerberos\talend.keytab talend@kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal@EXAMPLE.COM > E:\User\Installed\Drivers\Cloudera_Kerberos\kini-out.txt
+Exception: krb_error 0 Do not have keys of types listed in default_tkt_enctypes available; only have keys of following type:  No error
+KrbException: Do not have keys of types listed in default_tkt_enctypes available; only have keys of following type:
+        at java.security.jgss/sun.security.krb5.internal.crypto.EType.getDefaults(EType.java:295)
+        at java.security.jgss/sun.security.krb5.KrbAsReqBuilder.build(KrbAsReqBuilder.java:271)
+        at java.security.jgss/sun.security.krb5.KrbAsReqBuilder.send(KrbAsReqBuilder.java:325)
+        at java.security.jgss/sun.security.krb5.KrbAsReqBuilder.action(KrbAsReqBuilder.java:371)
+        at java.security.jgss/sun.security.krb5.internal.tools.Kinit.acquire(Kinit.java:248)
+        at java.security.jgss/sun.security.krb5.internal.tools.Kinit.<init>(Kinit.java:134)
+        at java.security.jgss/sun.security.krb5.internal.tools.Kinit.main(Kinit.java:96)
+
+
+>>>KinitOptions cache name is C:\Users\sd\krb5cc_sd
+Principal is talend@EXAMPLE.COM
+>>> Kinit using keytab
+>>> Kinit keytab file name: E:\User\Installed\Drivers\Cloudera_Kerberos\talend.keytab
+Java config name: null
+Native config name: C:\WINDOWS\krb5.ini
+Loaded from native config
+>>> Kinit realm name is EXAMPLE.COM
+>>> Creating KrbAsReq
+>>> KrbKdcReq local addresses are:
+   NetworkInterface name:lo (Software Loopback Interface 1):
+      [/127.0.0.1, /0:0:0:0:0:0:0:1]
+   NetworkInterface name:net0 (Microsoft 6to4 Adapter):
+      []
+   NetworkInterface name:eth0 (Microsoft Kernel Debug Network Adapter):
+      []
+   NetworkInterface name:net1 (WAN Miniport (L2TP)):
+      []
+   NetworkInterface name:net2 (Microsoft IP-HTTPS Platform Adapter):
+      []
+   NetworkInterface name:eth1 (WAN Miniport (IPv6)):
+      []
+   NetworkInterface name:eth2 (Intel(R) Ethernet Connection I217-LM):
+      [/10.0.0.213, /fe80:0:0:0:65a0:e960:cd3e:e785%eth2]
+   NetworkInterface name:eth3 (VirtualBox Host-Only Ethernet Adapter):
+      []
+   NetworkInterface name:net3 (WAN Miniport (IKEv2)):
+      []
+   NetworkInterface name:ppp0 (WAN Miniport (PPPOE)):
+      []
+   NetworkInterface name:eth4 (WAN Miniport (IP)):
+      []
+   NetworkInterface name:net4 (Microsoft Teredo Tunneling Adapter):
+      []
+   NetworkInterface name:eth5 (VirtualBox Host-Only Ethernet Adapter #3):
+      [/192.168.56.1, /fe80:0:0:0:acd6:2805:2a45:a91f%eth5]
+   NetworkInterface name:eth6 (Bluetooth Device (Personal Area Network)):
+      []
+   NetworkInterface name:net5 (WAN Miniport (SSTP)):
+      []
+   NetworkInterface name:eth7 (WAN Miniport (Network Monitor)):
+      []
+   NetworkInterface name:net6 (WAN Miniport (PPTP)):
+      []
+   NetworkInterface name:eth8 (VirtualBox Host-Only Ethernet Adapter #2):
+      []
+   NetworkInterface name:eth9 (VirtualBox Host-Only Ethernet Adapter #3-WFP Native MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth10 (VirtualBox Host-Only Ethernet Adapter #3-QoS Packet Scheduler-0000):
+      []
+   NetworkInterface name:eth11 (VirtualBox Host-Only Ethernet Adapter #3-WFP 802.3 MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth12 (Intel(R) Ethernet Connection I217-LM-WFP Native MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth13 (Intel(R) Ethernet Connection I217-LM-VirtualBox NDIS Light-Weight Filter-0000):
+      []
+   NetworkInterface name:eth14 (Intel(R) Ethernet Connection I217-LM-QoS Packet Scheduler-0000):
+      []
+   NetworkInterface name:eth15 (Intel(R) Ethernet Connection I217-LM-WFP 802.3 MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth16 (WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth17 (WAN Miniport (IP)-QoS Packet Scheduler-0000):
+      []
+   NetworkInterface name:eth18 (WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth19 (WAN Miniport (IPv6)-QoS Packet Scheduler-0000):
+      []
+   NetworkInterface name:eth20 (WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000):
+      []
+   NetworkInterface name:eth21 (WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000):
+      []
+>>> KdcAccessibility: reset
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): talend
+>>> KeyTabInputStream, readName(): kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal
+>>> KeyTab: load() entry length: 116; type: 17
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): talend
+>>> KeyTabInputStream, readName(): kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal
+>>> KeyTab: load() entry length: 124; type: 16
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): talend
+>>> KeyTabInputStream, readName(): kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal
+>>> KeyTab: load() entry length: 116; type: 23
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): talend
+>>> KeyTabInputStream, readName(): kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal
+>>> KeyTab: load() entry length: 108; type: 8
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): talend
+>>> KeyTabInputStream, readName(): kmouzouri-gcp-cdh5131-kerberos-1-1-0.c.qa-rd-emea.internal
+>>> KeyTab: load() entry length: 108; type: 3
+Looking for keys for: talend@EXAMPLE.COM
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19 16 23.
+LSA: Found Ticket
+LSA: Made NewWeakGlobalRef
+LSA: Found PrincipalName
+LSA: Made NewWeakGlobalRef
+LSA: Found DerValue
+LSA: Made NewWeakGlobalRef
+LSA: Found EncryptionKey
+LSA: Made NewWeakGlobalRef
+LSA: Found TicketFlags
+LSA: Made NewWeakGlobalRef
+LSA: Found KerberosTime
+LSA: Made NewWeakGlobalRef
+LSA: Found String
+LSA: Made NewWeakGlobalRef
+LSA: Found DerValue constructor
+LSA: Found Ticket constructor
+LSA: Found PrincipalName constructor
+LSA: Found EncryptionKey constructor
+LSA: Found TicketFlags constructor
+LSA: Found KerberosTime constructor
+LSA: Finished OnLoad processing

@@ -1,0 +1,1 @@
+d:\curl\src\curl -X PUT -H "Content-Type:application/vnd.schemaregistry.v1+json"  --data {\"compatibility\":\"NONE\"}  http://192.168.0.133:8081/config

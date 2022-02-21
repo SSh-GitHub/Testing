@@ -1,0 +1,7 @@
+#!/bin/bash
+# run Confluent ervices by LI 
+/home/confluent/confluent/bin/confluent local start --path /home/confluent/confluent-5.4.0
+# disable Confluent schema compatability check 
+/usr/bin/curl -X PUT -H "Content-Type:application/vnd.schemaregistry.v1+json"  --data {\"compatibility\":\"NONE\"}  http://localhost:8081/config
+# run Confluent repository initialization with MITI samples
+/home/confluent/Uploader/run_Uploader.sh

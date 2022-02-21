@@ -1,0 +1,6 @@
+[
+{ "_id" : { "$oid" : "5746136cabc71c03f87c242c" }, "title" : ".", "author" : ["."], "pages" : 216.0, "language" : ".", "publisher_id" : { "$oid" : "5367dd99228cd006ab2bc60b" }, "available" : 3.0, "checkout" : [{ "by" : { "$oid" : "5367dd99228cd006ab2bc60c" }, "date" : { "$date" : "." } }] }, 
+{ "_id" : { "$oid" : "5746136cabc71c03f87c242d" }, "title" : ".", "author" : ["."], "published_date" : { "$date" : "." }, "pages" : 68.0, "language" : ".", "publisher_id" : { "$oid" : "5367dd99228cd006ab2bc60b" } }, 
+{ "_id" : { "$oid" : "574614d16629dc9915a2be6a" }, "title" : ".", "author" : ["."], "pages" : 216.0, "language" : ".", "publisher_id" : { "$oid" : "5367dd99228cd006ab2bc60b" }, "available" : 3.0, "checkout" : [{ "by" : { "$oid" : "5367dd99228cd006ab2bc60c" }, "date" : { "$date" : "." } }] }, 
+{ "_id" : { "$oid" : "574614d16629dc9915a2be6b" }, "title" : ".", "author" : ["."], "published_date" : { "$date" : "." }, "pages" : 68.0, "language" : ".", "publisher_id" : { "$oid" : "5367dd99228cd006ab2bc60b" } }
+]
