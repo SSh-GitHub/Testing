@@ -1,0 +1,1 @@
+sftp.exe -i ../../../SSh-Linux-01_key.pem  azureuser@40.118.244.202:/home/azureuser/hadoop/run_hadoop-3.3.0_sshadlsgen2_with_msi.sh ./

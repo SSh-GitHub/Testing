@@ -1,0 +1,1 @@
+sftp.exe -i ../../../SSh-Linux-01_key.pem  azureuser@40.118.244.202

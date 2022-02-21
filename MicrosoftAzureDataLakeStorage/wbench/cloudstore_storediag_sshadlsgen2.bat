@@ -1,0 +1,1 @@
+call cloudstore.bat  storediag abfs://ssh-test-fs@sshadlsgen2.dfs.core.windows.net/

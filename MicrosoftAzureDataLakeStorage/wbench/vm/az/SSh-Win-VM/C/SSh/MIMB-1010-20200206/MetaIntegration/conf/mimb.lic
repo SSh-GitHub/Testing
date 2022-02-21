@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>
+<License>
+    <MacAdress>00:0d:3a:30:ee:da</MacAdress>
+    <ExtraTools>
+        <Tool Id='3210' Name='Metadata Model Lineage Analyzer' />
+    </ExtraTools>
+    <ImportBridges>
+        <Bridge Id='ANY' />
+    </ImportBridges>
+    <ExportBridges>
+        <Bridge Id='ANY' />
+    </ExportBridges>
+    <Key>MC0CFQCTmjk7lr8d92DNFbxfRYW6bf/ikgIUKnUOy3HFj5EeTukfZpKIG8WMYy0=</Key>
+</License>
