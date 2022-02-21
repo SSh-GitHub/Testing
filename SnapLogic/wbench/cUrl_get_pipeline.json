@@ -1,0 +1,21 @@
+
+D:\user\Testing\SnapLogic>D:\Util\Win\curl\I386\curl -i -X GET https://elastic.snaplogic.com/api/1/rest/public/runtime/snaplogictrial?pipe_name=SSh_pipeline_1    -H "Host:elastic.snaplogic.com"    -H "Authorization:Basic c2VyZ2V5LnNoYWJhbG92QG1ldGFpbnRlZ3JhdGlvbi5pbmZvOk1ldGExOTk3b2Mu"   
+HTTP/1.1 200 OK
+Server: nginx/1.10.1
+Date: Sun, 11 Mar 2018 17:45:55 GMT
+Content-Type: application/json
+Content-Length: 695
+Connection: keep-alive
+X-SL-UserID: sergey.shabalov@metaintegration.info
+Access-Control-Allow-Headers: if-none-match, content-type, authorization, x-date
+Access-Control-Max-Age: 17600
+Accept-Ranges: none
+X-SL-StatusCode: 200
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'
+
+{"response_map": {"entries": [{"pipe_id": "acc0af97-0b71-4e47-8991-bd0379704e3a", "cc_label": "ps23sl-jccs-uv03751", "documents": 0, "user_id": "sergey.shabalov@metaintegration.info", "ccid": "5a95ea1ea920660026be1dfc", "runtime_path_id": "snaplogictrial/rt/cloud/dev", "parent_ruuid": null, "subpipes": {}, "state_timestamp": "2018-03-11T17:45:17.924000+00:00", "error_documents": 0, "label": "SSh_pipeline_1", "path_id": "/snaplogictrial/projects/Sergiy Shabalov", "state": "Failed", "create_time": "2018-03-11T17:45:16.924000+00:00", "invoker": "manual", "id": "444a9a94-d43b-4f7d-9db3-1c9d5f9e5da6", "runtime_label": "Cloud"}], "total": 1, "limit": 10, "offset": 0}, "http_status_code": 200}
