@@ -1,0 +1,1 @@
+D:\gradle\bin\gradle.bat compile 'com.google.cloud:google-cloud-storage:1.55.0'

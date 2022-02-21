@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ssh-test-project-01",
+  "private_key_id": "7f08e0f331c16733cb69c9a5f23ade70fe10757e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCPWLI5rwud9GyC\nLxa9A+Y+vffBbURbndktktQe2oG8mL2QMa7ce7g45LHjXzXo/j3xL8VHk9LY3v3w\nzz0tvWshjHEd+mvGe2keP7cBDlh4I2/wE8hYjRlxV9XuI33XOr3vqsIk4XtFHjoE\nBXs2Ktya5PSWsk3yQAPcb3j3zeOzej3AbXaSf1Olvp/JyT4gvGNF9m1Fsa40CPI1\nK5Pr6cqzrJ7SqVooOGttAsBsCJ1++HOHcREDgcvu50A6vnCD3wBpHD0jFF256fkV\npqXlFStjoYEq4sYrBHmTPzAw03kw+Y+Nx4Qe2SOLZPGWtOLizRKC/31N3fn4Ydfn\nSh4HLguFAgMBAAECggEAHUCebkMYfc1pb0+otj3beKZPrvtbXc7iiPhTrVAt9Yy9\n8nURGBFvULzqyFmfqMJpZZS4D5lNB9DJxaCk/XaQLDJ6ywFViRWaKAAcmmyRBUNG\nDpoa4mc47/Zaw9QeVBO6uvP/1oLlIv++Gx/7OtyYVEuw1ifg3DTQFOXyq68qbm+P\ngJoiqJsZ2JEqH0qCo0iz1RoqTU+aQpHP5zO8wL803QyHj+uAdzQtZI+HTdbSDgBo\nvX25ydMzf8VmJxBV8TtHD730XGYqd0i7Zfl0W6MlMoL7xJbscuUIebGS1MmwuIhf\n3dOeaEt4Nvxc8ihx/sS5udR3ks6uduFg2452N0ngAQKBgQDEfZ743SutsUhe73Gs\naXW0IQ4ayfMR2bBQHdBhow5fsj7H9CXdWdLgCex1LfektQdPA7L6TWBJBwtywcWk\n+dfpQLdd2aBkknVY6FtSb24821VhCCKv3IarpaI0+BfSXotvhTQQwCxsMNLidofC\nFRx3A3wDUaKJLczhXEcCrX+kAQKBgQC6wq325hqslZOkRAesZz0NvuvHct1cQ3OT\nVTDHiqqw3hrxxhGMmoyBYYnCPSUmLVD9Wk+nxnV6u5YDhQWP+o6bhY5Uu64b4zY/\nzfPheDAzEON0LPVvII+7pzWbRuNIwXzu37zUkpbO90C1YTss1ub/mR8SLM8JUfRU\n5K87jSHXhQKBgQCjPbZIDP9Pszxr2sP2uDrYZqngKa0uREuNk+deZmf3qw8rcbPP\nfOOLy9LN212lUdx7kZgtCQGYSikBsuhv0j3FhEWSy83MID0rmwbbqsXL+3CoR2kB\n79VWXyoulXq9BF0VTnXeALonPDzHdi/9Vyqp2ZQ68aR2ET3ocJByMhAcAQKBgHHP\npbgqbeLynDCkjJCRsXEpAgJfi2poaIxGhB118aMrFvxzmco3fJxz1kGahYMIZqye\nVqCFnp4WpsqqS8N8C1/XOe+FGAtCoZKsbYzfc3ALQLFRnJgGHdFbip1/y45Q61Oe\n4TIhyumBX9uozyj6JXdp1rd6uwiQ+vapDeiajx8JAoGBAJFrCGlhdfGagbKj9kSs\nn9NyPeWEq6OdswO9FKUQdfW5Hxem4u6iYDk4bpn+UUp/xma/QgdDGE2xG6jzJHZ4\nJQRL/xKPgrAGQg93DmQNIStU2px3lFIAhnPmLh84afm6qsGKO9K1wPWnzeaD2j5b\nrhAi+KT9pIfZEHLbPaGlC5vj\n-----END PRIVATE KEY-----\n",
+  "client_email": "ssh-service-account-01@ssh-test-project-01.iam.gserviceaccount.com",
+  "client_id": "107930106200094955532",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ssh-service-account-01%40ssh-test-project-01.iam.gserviceaccount.com"
+}
