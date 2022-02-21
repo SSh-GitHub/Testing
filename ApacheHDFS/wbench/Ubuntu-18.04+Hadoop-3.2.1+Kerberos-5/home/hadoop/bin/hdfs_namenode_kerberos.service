@@ -1,0 +1,18 @@
+[Unit]
+Description=HDFS namenode kerberos
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=forking
+User=hadoop
+Group=sudo
+Environment=JAVA_HOME=/usr/
+Environment=HADOOP_HOME=/home/hadoop/hadoop-3.2.1/
+WorkingDirectory=/home/hadoop/
+ExecStart=/home/hadoop/bin/start_hdfs_namenode_kerberos.sh
+ExecStop=/home/hadoop/bin/stop_hdfs_namenode_kerberos.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=hdfs_namenode_kerberos

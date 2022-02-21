@@ -1,0 +1,853 @@
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:46 MIMB_I0064 MIMB process ID=22692
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0079 Running as an application on behalf of 'SSH-WS-01\SSh'
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0032 System Hardware: Intel64 Family 6 Model 63 Stepping 2, GenuineIntel at 12 CPU(s)/Core(s) with 65447 RAM
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0033 System Software: Windows 10 10.0 amd64 on ssh-ws-01 with Office: 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0058 System encoding: windows-1251
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0078 Data directory: D:\user\miti\10.x\10.1.0\Build\_Install\data
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0056 MIMB is validating request.
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0057 MIMB is checking the license.
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0073 The hostid is 181f567c
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0077 The mac address is 00:05:9a:3c:7a:00
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0066 Using OEM license MIMB_WEB
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0028 Import bridge: 'ApacheHDFS' 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0030 Export bridge: 'MetaIntegrationMultiModelXml' 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0053 MIMB is ready to execute request.
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_D0070 Created temporary directory: 'D:\user\miti\10.x\10.1.0\Build\_Install\data\temp\ApacheHDFS4695153256406347851'
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0027 Import tool: Apache Hadoop Distributed File System (HDFS) Hadoop 2.x to 3.x (http://hadoop.apache.org/docs/r1.2.1/hdfs_user_guide.html)
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0013 Import interface: [File System] Multi-Model, Data Store (NoSQL / Hierarchical, Physical Data Model) via Java API from ApacheHDFS <2020-09-21 20:09:47>
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0028 Import bridge: 'ApacheHDFS' ApacheHDFS: 10.1.0 - 2020-09-19 17:15:53
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Configuration files directory = D:\user\Testing\ApacheHDFS\wbench\etc\kerberos\
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 NameNode URI = hdfs://ip-172-31-28-135.ec2.internal:8120
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Root directory = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Include filter = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Exclude filter = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Partition directories = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Hadoop properties = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Keytab file = D:\user\Testing\ApacheHDFS\wbench\Ubuntu-18.04+Hadoop-3.2.1+Kerberos-5\home\hadoop\keytabs\hdfs_client.keytab
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Principal = hdfs_client@HADOOP.REALM
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Username = hdfs_client@HADOOP.REALM
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 HDFS encryption key provider (KMS) = 
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0031 Miscellaneous = -fresh.partition.models -cache.clear -j -Djava.security.krb5.conf=D:\user\Testing\ApacheHDFS\wbench\etc\krb5.conf
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:47 MIMB_I0074 Running bridge...
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:48 BLIB_W0012 File 'D:\user\miti\10.x\10.1.0\Build\_Install\data\download\MIMB\org.apache.hadoop\hadoop-hdfs\3.2.0\hadoop-hdfs-3.2.0.jar' not found.
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:48 JBDG_D0009 The JVM 'D:\user\miti\dev\trunk\External\jdk\jdk-11\bin\javaw.exe' is version "11"
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:48 JBDG_D0010 The JVM 'D:\user\miti\dev\trunk\External\jdk\jdk-11\bin\javaw.exe' is assumed to be a 64 bit JVM
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:09:48 JBDG_D0001 Starting JVM in separate process.
+
+[main] 2020-09-21 20:09:49 MBCM_I0036 Started Java Oracle Corporation version 11+28 in 'D:\user\miti\dev\trunk\External\jdk\jdk-11' using 8192 MB RAM. Custom options: --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED, -Xms4G, -Xmx8G
+
+[main] 2020-09-21 20:09:49 MBCM_D0047 Loading Java bridge class: MITI.bridges.filesystem.hdfs.ImportBridge
+
+[main] 2020-09-21 20:09:49 BLIB_I0118 MITI component(s) with build version '10.1.0 - 2020-09-19': MIRUtil.jar, MIR.jar, MIRBridgeConstants.jar, MIRExpressionLib.jar, MIRModelBridge.jar, MIRModelConverter.jar, MIREtlBridgeLib.jar, Mimb.jar, MIRProfiler.jar, MIRStatisticsUtil.jar, Licensing.jar, FileMetadataCommon.jar, FileSystem.jar, ApacheHDFS.jar, Avro.jar, ApacheOrc.jar, Parquet.jar, JsonCommon.jar, Json.jar, FlatFile.jar, ExcelFile.jar, W3cXml.jar, CobolCopybook.jar, PositionalFile.jar
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 Started HDFS multi-model bridge
+
+[main] 2020-09-21 20:09:49 MBI_FILEMCOM_S0011 Starting import...
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 Cleared bridge cache
+
+[main] 2020-09-21 20:09:49 MBCCH_S0012 Clearing import models file cache.
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 org.apache.hadoop.conf.Configuration:
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.cache.secs = 300
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.erasurecode.codec.rs.rawcoders = rs_native,rs_java
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.posix.attr.uid.name = uidNumber
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.directory.search.timeout = 10000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.threads = 8
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.low-latency = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.ftp.host.port = 21
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.block.size = 32M
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.connection.maxidletime = 10000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.encrypted.key.cache.expiry = 43200000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.abfs.impl = org.apache.hadoop.fs.azurebfs.Abfs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	tfile.io.chunk.size = 1048576
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.session.timeout.ms = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.automatic.close = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.sas.expiry.period = 90d
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.health-monitor.sleep-after-disconnect.ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.map.index.interval = 128
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.util.hash.type = murmur
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.staging.abort.pending.uploads = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.cache.background.reload.threads = 3
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.user.agent.prefix = unknown
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.posix.attr.gid.name = gidNumber
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.path.style.access = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.metadatastore.authoritative = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.file.impl = org.apache.hadoop.fs.local.LocalFs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	net.topology.script.number.args = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.token.validity = 36000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.failover-controller.graceful-fence.rpc-timeout.ms = 5000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping = org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	dfs.socket.timeout = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.serializations = org.apache.hadoop.io.serializer.WritableSerialization, org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization, org.apache.hadoop.io.serializer.avro.AvroReflectSerialization
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.cache.warn.after.ms = 5000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.auth_to_local.mechanism = MIT
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.crypto.buffer.size = 8192
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.ftp.transfer.mode = BLOCK_TRANSFER_MODE
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.abfss.impl = org.apache.hadoop.fs.azurebfs.Abfss
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.cross-origin.allowed-methods = GET,POST,HEAD
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.retry.interval.ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.zk.acl = world:anyone:rwcda
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.secure = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.wasb.impl = org.apache.hadoop.fs.azure.NativeAzureFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.kerberos.kinit.command = kinit
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.bind.wildcard.addr = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.trash.interval = 0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.multiobjectdelete.enable = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.viewfs.rename.strategy = SAME_MOUNTPOINT
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.connect.max.retries.on.timeouts = 45
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.throttle.retry.interval = 100ms
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.client.resolve.topology.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	seq.io.sort.factor = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	adl.feature.ownerandgroup.enableupn = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.fast.upload.buffer = disk
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	seq.io.sort.mb = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.health-monitor.connect-retry-interval.ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	nfs.exports.allowed.hosts = * rw
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.instrumentation.requires.admin = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.retry.ceiling.ms = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.file.buffer.size = 4096
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.mapfile.bloom.size = 1048576
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.ftp.data.connection.mode = ACTIVE_LOCAL_DATA_CONNECTION_MODE
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.connect.retry.interval = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.authentication.retry-count = 1
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.staging.conflict-mode = fail
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.table.capacity.write = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.swift.impl = org.apache.hadoop.fs.swift.snative.SwiftNativeFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.failover-controller.graceful-fence.connection.retries = 1
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.key.default.cipher = AES/CTR/NoPadding
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.connection.timeout.ms = 15000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.adl.impl = org.apache.hadoop.fs.adl.Adl
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.wasb.impl = org.apache.hadoop.fs.azure.Wasb
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.java.secure.random.algorithm = SHA1PRNG
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ftp.blocksize = 67108864
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	file.stream-buffer-size = 4096
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.max.total.tasks = 5
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.secure.mode = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.search.group.hierarchy.levels = 0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.idlethreshold = 4000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.skip.checksum.errors = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.abfss.impl = org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ftp.stream-buffer-size = 4096
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	file.blocksize = 67108864
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ftp.replication = 3
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.authorization = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.simple.anonymous.allowed = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.rpc.socket.factory.class.default = org.apache.hadoop.net.StandardSocketFactory
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	file.bytes-per-checksum = 512
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.har.impl.disable.cache = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.erasurecode.codec.xor.rawcoders = xor_native,xor_java
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.swebhdfs.impl = org.apache.hadoop.fs.SWebHdfs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.dns.log-slow-lookups.threshold.ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.common.configuration.version = 3.0.0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.authentication = kerberos
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	file.replication = 1
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.conversion.rule = none
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.mapfile.bloom.error.rate = 0.005
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.encrypted.key.cache.size = 500
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.staging.unique-filenames = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.multipart.purge = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.connection.establish.timeout = 5000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.search.attr.member = member
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.client.conf = ssl-client.xml
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.multipart.purge.age = 86400
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.cache.background.reload = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.encrypted.key.cache.low-watermark = 0.3f
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.user.group.static.mapping.overrides = dr.who=;
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.credential.clear-text-fallback = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.retry.throttle.interval = 1000ms
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.maximum.data.length = 67108864
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	tfile.fs.input.buffer.size = 262144
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.failover-controller.new-active.rpc-timeout.ms = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.erasurecode.codec.rs-legacy.rawcoders = rs-legacy_java
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.hostname.verifier = DEFAULT
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.type = simple
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.system.tags = YARN,HDFS,NAMENODE,DATANODE,REQUIRED,SECURITY,KERBEROS,PERFORMANCE,CLIENT
+      ,SERVER,DEBUG,DEPRECATED,COMMON,OPTIONAL
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	net.topology.impl = org.apache.hadoop.net.NetworkTopology
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.seqfile.compress.blocksize = 1000000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.webhdfs.impl = org.apache.hadoop.fs.WebHdfs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.retry.times = 5
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.ftp.impl = org.apache.hadoop.fs.ftp.FtpFs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ftp.bytes-per-checksum = 512
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.workaround.non.threadsafe.getpwuid = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.fallback-to-simple-auth-allowed = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.rpc.protection = authentication
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.abfs.impl = org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.permissions.umask-mode = 022
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.health-monitor.rpc-timeout.ms = 45000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.staticuser.user = dr.who
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.connection.maximum = 15
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.list.version = 2
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.viewfs.impl = org.apache.hadoop.fs.viewfs.ViewFs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.paging.maximum = 5000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.cli.prune.age = 86400000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.ftp.host = 0.0.0.0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.maximum.response.length = 134217728
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.adl.oauth2.access.token.provider.type = ClientCredential
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.shell.missing.defaultFs.warning = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.impl = org.apache.hadoop.fs.s3a.S3AFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.kerberos.keytab = ${user.home}/hadoop.keytab
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.root = /registry
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.background.sleep = 25ms
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.jetty.logs.serve.aliases = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.saskey.usecontainersaskeyforallaccess = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.caller.context.max.size = 128
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.auth_to_local = 
+      RULE:[1:$1@$0](.*)s/.*/hadoop/
+      DEFAULT
+    
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.cross-origin.max-age = 1800
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.compression.codec.bzip2.library = system-native
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.ping.interval = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	net.topology.node.switch.mapping.impl = org.apache.hadoop.net.ScriptBasedMapping
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.df.interval = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.assumed.role.session.duration = 30m
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.readahead.range = 64K
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.zookeeper.parent-znode = /hadoop-ha
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.cross-origin.allowed-headers = X-Requested-With,Content-Type,Accept,Origin
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.retry.limit = ${fs.s3a.attempts.maximum}
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.attempts.maximum = 20
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.authorization = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.seqfile.local.dir = ${hadoop.tmp.dir}/io/local
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.assumed.role.credentials.provider = org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.authorization.caching.enable = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.failover.sleep.max.millis = 2000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.wasbs.impl = org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.keystores.factory.class = org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.zk.num-retries = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.hdfs.impl = org.apache.hadoop.fs.Hdfs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.random.device.file.path = /dev/urandom
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.filter.initializers = org.apache.hadoop.http.lib.StaticUserWebFilter
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.rpc-timeout.ms = 0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.client.resolve.remote.symlinks = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.wasbs.impl = org.apache.hadoop.fs.azure.Wasbs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.max.retries = 9
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.magic.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.enabled.protocols = TLSv1,SSLv2Hello,TLSv1.1,TLSv1.2
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.name = file
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	rpc.metrics.quantile.enable = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.bytes.per.checksum = 512
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.azure.local.sas.key.mode = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.kill.max = 10
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.threads.max = 10
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.server.listen.queue.size = 128
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.assumed.role.sts.endpoint.region = us-west-1
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	adl.http.timeout = -1
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.ftp.impl = org.apache.hadoop.fs.ftp.FTPFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.connection.timeout = 200000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.threads.keepalivetime = 60
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.caller.context.signature.max.size = 40
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.dns.log-slow-lookups.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.connection.timeout.ms = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.shell.command.timeout = 0s
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.table.capacity.read = 500
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	file.client-write-packet-size = 65536
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.failover-controller.cli-check.rpc-timeout.ms = 20000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.connect.max.retries = 10
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.zookeeper.acl = world:anyone:rwcda
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.ping = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.timeout = 60
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.tmp.dir = /tmp/hadoop-${user.name}
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.etag.checksum.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.failover.sleep.base.millis = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.retry.interval = 500ms
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.require.client.cert = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.uid.cache.secs = 14400
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.service.shutdown.timeout = 30s
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.trash.checkpoint.interval = 0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.zk.timeout-ms = 10000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.s3a.impl = org.apache.hadoop.fs.s3a.S3A
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.health-monitor.check-interval.ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.tags.system = YARN,HDFS,NAMENODE,DATANODE,REQUIRED,SECURITY,KERBEROS,PERFORMANCE,CLIENT
+      ,SERVER,DEBUG,DEPRECATED,COMMON,OPTIONAL
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.tcpnodelay = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.client.connect.timeout = 20000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.multipart.threshold = 2147483647
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	io.map.index.skip = 0
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.committer.staging.tmp.path = tmp/staging
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.cross-origin.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.providers.combined = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.AbstractFileSystem.har.impl = org.apache.hadoop.fs.HarFs
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.kerberos.min.seconds.before.relogin = 60
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.kms.client.encrypted.key.cache.num.refill.threads = 2
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	tfile.fs.output.buffer.size = 262144
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.du.interval = 600000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.ssl = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.zk.retry-interval-ms = 1000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.buffer.dir = ${hadoop.tmp.dir}/s3a
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.defaultFS = hdfs://ip-172-31-28-135.ec2.internal:8120/
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.multipart.size = 100M
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.search.attr.group.name = cn
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.socket.send.buffer = 8192
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	dfs.ha.fencing.ssh.connect-timeout = 30000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.zk.quorum = localhost:2181
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.cross-origin.allowed-origins = *
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.system.acls = sasl:yarn@, sasl:mapred@, sasl:hdfs@
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.crypto.cipher.suite = AES/CTR/NoPadding
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.fast.upload.active.blocks = 4
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.crypto.codec.classes.aes.ctr.nopadding = org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec, org.apache.hadoop.crypto.JceAesCtrCryptoCodec
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.metadatastore.impl = org.apache.hadoop.fs.s3a.s3guard.NullMetadataStore
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.groups.negative-cache.secs = 30
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.ssl.server.conf = ssl-server.xml
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.registry.jaas.context = Client
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.search.filter.group = (objectClass=group)
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.kerberos.principal = HTTP/_HOST@LOCALHOST
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.caller.context.enabled = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.shell.safely.delete.limit.num.files = 100
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.search.filter.user = (&(objectClass=user)(sAMAccountName={0}))
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.s3guard.ddb.table.create = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ftp.client-write-packet-size = 65536
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.socket.recv.buffer = 8192
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.adl.impl = org.apache.hadoop.fs.adl.AdlFileSystem
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.sensitive-config-keys = 
+      secret$
+      password$
+      ssl.keystore.pass$
+      fs.s3a.server-side-encryption.key
+      fs.s3a.*.server-side-encryption.key
+      fs.s3a.secret.key
+      fs.s3a.*.secret.key
+      fs.s3a.session.key
+      fs.s3a.*.session.key
+      fs.s3a.session.token
+      fs.s3a.*.session.token
+      fs.azure.account.key.*
+      fs.azure.oauth2.*
+      fs.adl.oauth2.*
+      credential$
+      oauth.*secret
+      oauth.*password
+      oauth.*token
+      hadoop.security.sensitive-config-keys
+  
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.server.log.slow.rpc = false
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.group.mapping.ldap.read.timeout.ms = 60000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.logs.enabled = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ha.zookeeper.session-timeout.ms = 10000
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.connection.ssl.enabled = true
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	fs.s3a.retry.throttle.limit = ${fs.s3a.attempts.maximum}
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.security.key.default.bitlength = 128
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	hadoop.http.authentication.signature.secret.file = ${user.home}/hadoop-http-auth-signature-secret
+
+[main] 2020-09-21 20:09:49 BLIB_D0029 	ipc.server.max.connections = 0
+
+[main] 2020-09-21 20:09:50 BLIB_D0029 Creating user with namehdfs_client@HADOOP.REALM
+
+[main] 2020-09-21 20:09:50 BLIB_D0029 Returning file system
+
+[main] 2020-09-21 20:09:50 MBI_FILEMCOM_S0012 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/
+
+[main] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/
+
+[iterate-1] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples
+
+[iterate-7] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xml
+
+[iterate-2] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro
+
+[iterate-5] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Parquet
+
+[iterate-6] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xlsx
+
+[iterate-8] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_orc
+
+[iterate-4] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json
+
+[iterate-3] 2020-09-21 20:09:52 BLIB_D0029 Listing files in hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv
+
+[main] 2020-09-21 20:09:53 MBI_FILEMCOM_S0013 Listed 16 files in 9 directories.
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Finding partitioned folders...
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Parquet of PARQUET files
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_orc of ORC files
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro of AVRO files
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv of CSV files
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json of JSON files
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Found partitioned folder hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xlsx of XLSX files
+
+[main] 2020-09-21 20:09:53 MBI_FILEMCOM_S0017 Processing files...
+
+[main] 2020-09-21 20:09:53 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro/test.avro
+
+[main] 2020-09-21 20:09:55 DTLIB_D0017 Validating datastores in 'MIRGENERIC'...
+
+[main] 2020-09-21 20:09:55 DTLIB_D0014 Using datatype mappings for 'APACHE AVRO 1.0.0'
+
+[main] 2020-09-21 20:09:55 BLIB_D0029 Saved Model 'test.avro' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2356702170744204734.0.0.w1.model.xml
+
+[main] 2020-09-21 20:09:55 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xml/TBC Model.xml
+
+[main] 2020-09-21 20:09:57 BLIB_D0029 Saved Model 'TBC Model.xml' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8045276271498829246.0.0.w1.model.xml
+
+[main] 2020-09-21 20:09:57 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Parquet/t.parquet
+
+[main] 2020-09-21 20:09:59 DTLIB_D0014 Using datatype mappings for 'PARQUET 1.0.0'
+
+[main] 2020-09-21 20:10:00 BLIB_D0029 Saved Model 't.parquet' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\1730760072689044306.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:00 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json/Samples_book_01.json
+
+[main] 2020-09-21 20:10:01 DTLIB_D0014 Using datatype mappings for 'JSON 1.0.0'
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Analyzed 20 JSON documents for 0,009000 seconds
+
+[main] 2020-09-21 20:10:01 DTLIB_D0014 Using datatype mappings for 'MONGODB 1.0.0'
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Convert Samples_book_01.json/Samples_book_01.json/checkout/by/by/$oid
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Convert Samples_book_01.json/Samples_book_01.json/checkout/date/date/$date
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Convert Samples_book_01.json/Samples_book_01.json/published_date/published_date/$date
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Convert Samples_book_01.json/Samples_book_01.json/publisher_id/publisher_id/$oid
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Convert Samples_book_01.json/Samples_book_01.json/_id/_id/$oid
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Class types cleanup - fixed 5 items
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Saved Model 'Samples_book_01.json' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2331898548035775019.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:01 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xlsx/Sample - Superstore Subset (Excel).xlsx
+
+[main] 2020-09-21 20:10:04 DTLIB_D0014 Using datatype mappings for 'FILE 1.0.0'
+
+[main] 2020-09-21 20:10:04 BLIB_D0029 Saved Model 'Sample - Superstore Subset (Excel).xlsx' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2087030811459219477.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:04 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_orc/TestOrcFile.testSnappy.orc
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:06  WARNING: An illegal reflective access operation has occurred
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:06  WARNING: Illegal reflective access by io.airlift.compress.snappy.UnsafeUtil (file:/D:/user/miti/10.x/10.1.0/Build/_Install/data/download/MIMB/io.airlift/aircompressor/0.10/aircompressor-0.10.jar) to field java.nio.Buffer.address
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:06  WARNING: Please consider reporting this to the maintainers of io.airlift.compress.snappy.UnsafeUtil
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:06  WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:06  WARNING: All illegal access operations will be denied in a future release
+
+[main] 2020-09-21 20:10:06 DTLIB_D0014 Using datatype mappings for 'APACHE ORC 1.0.0'
+
+[main] 2020-09-21 20:10:06 BLIB_D0029 Saved Model 'TestOrcFile.testSnappy.orc' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2431328368144260325.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:06 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv/data-example-1.csv
+
+[main] 2020-09-21 20:10:07 DTLIB_D0014 Using datatype mappings for 'CSV 1.0.0'
+
+[main] 2020-09-21 20:10:07 BLIB_D0029 Saved Model 'data-example-1.csv' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442156908349.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:07 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro/users.avro
+
+[main] 2020-09-21 20:10:07 BLIB_D0029 Saved Model 'users.avro' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2961721285984074076.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:07 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json/Samples_book_02.json
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Analyzed 20 JSON documents for 0,003000 seconds
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Convert Samples_book_02.json/Samples_book_02.json/checkout/by/by/$oid
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Convert Samples_book_02.json/Samples_book_02.json/checkout/date/date/$date
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Convert Samples_book_02.json/Samples_book_02.json/published_date/published_date/$date
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Convert Samples_book_02.json/Samples_book_02.json/publisher_id/publisher_id/$oid
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Convert Samples_book_02.json/Samples_book_02.json/_id/_id/$oid
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Class types cleanup - fixed 5 items
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Saved Model 'Samples_book_02.json' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2331898548064404170.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:08 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Parquet/users.parquet
+
+[main] 2020-09-21 20:10:10 BLIB_D0029 Saved Model 'users.parquet' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\41572860721378370.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:10 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xlsx/Sample - World Bank Indicators.xlsx
+
+[main] 2020-09-21 20:10:12 BLIB_D0029 Saved Model 'Sample - World Bank Indicators.xlsx' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\7058117349888011247.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:12 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_orc/over1k_bloom.orc
+
+[notify-1] 2020-09-21 20:10:13 MBI_FILEMCOM_S0018 Processed 11 files of 16.
+
+[main] 2020-09-21 20:10:14 BLIB_D0029 Saved Model 'over1k_bloom.orc' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\5556754098535140356.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:14 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv/data-example-2.csv
+
+[main] 2020-09-21 20:10:14 BLIB_D0029 Saved Model 'data-example-2.csv' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442157831870.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:14 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json/Samples_book_03.json
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Analyzed 20 JSON documents for 0,004000 seconds
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Convert Samples_book_03.json/Samples_book_03.json/checkout/by/by/$oid
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Convert Samples_book_03.json/Samples_book_03.json/checkout/date/date/$date
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Convert Samples_book_03.json/Samples_book_03.json/published_date/published_date/$date
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Convert Samples_book_03.json/Samples_book_03.json/publisher_id/publisher_id/$oid
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Convert Samples_book_03.json/Samples_book_03.json/_id/_id/$oid
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Class types cleanup - fixed 5 items
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Saved Model 'Samples_book_03.json' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\2331898548093033321.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:15 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv/data-example-3.csv
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Saved Model 'data-example-3.csv' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442158755391.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Processing hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv/data-example-4.csv
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Saved Model 'data-example-4.csv' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442159678912.0.0.w1.model.xml
+
+[main] 2020-09-21 20:10:16 MBI_FILEMCOM_S0018 Processed 16 files of 16.
+
+[main] 2020-09-21 20:10:16 MBI_FILEMCOM_S0015 Started partition detection analysis...
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 ================================================================================================
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Merging partitioned folders ...
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json'
+
+[main] 2020-09-21 20:10:16 BLIB_D0029 Saved Model 'Sample_Json' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442159678912.0.0.r.model.xml
+
+[main] 2020-09-21 20:10:17 MBI_FILEMCOM_S0016 Found partitioned directory hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Json
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Csv'
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Found unequal model data-example-2.csv
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Xlsx'
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Found unequal model Sample - World Bank Indicators.xlsx
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro'
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Saved Model 'Sample_Avro' as D:\user\miti\10.x\10.1.0\Build\_Install\data\MIMB\cache\ApacheHDFSBridge\ssh-ws-01.hdfs___ip-172-31-28-135.ec2.internal_8120_.no-dp\mir_2.8\8299000442159678912.0.0.r.model.xml
+
+[main] 2020-09-21 20:10:17 MBI_FILEMCOM_S0016 Found partitioned directory hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Avro
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_orc'
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Found unequal model TestOrcFile.testSnappy.orc
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Processing partitioned folder[1] 'hdfs://ip-172-31-28-135.ec2.internal:8120/Samples/Sample_Parquet'
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Found unequal model users.parquet
+
+[main] 2020-09-21 20:10:17 BLIB_D0029 Imported 18 new models. Reused 0 cached models.
+
+[main] 2020-09-21 20:10:17 MVLD_I0201 Starting basic consistency check (model validation)
+
+[main] 2020-09-21 20:10:17 MVLD_I0155 Consistency: Validating model 'hdfs://ip-172-31-28-135.ec2.internal:8120'
+
+[main] 2020-09-21 20:10:17 PRFLR_D0031 Loading profile [File System (Directory)].
+
+[main] 2020-09-21 20:10:17 STATISTICS_I0001 Metadata statistics: Directory: 7, DirectoryStructure: 1, File: 13
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:17 MIMB_S0014 Import completed successfully <2020-09-21 20:10:17>
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:17 MIMB_D0054 MIMB executed request.
+
+[[ApacheHDFSImport, MetaIntegrationMultiModelXmlExport]] 2020-09-21 20:10:17 BLIB_I0118 MITI component(s) with build version '10.1.0 - 2020-09-19': MIRUtil.jar, MIR.jar, MIRModelBridge.jar, MIMBWebServices.jar
+

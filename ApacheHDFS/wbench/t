@@ -1,0 +1,20 @@
+
+D:\user\Testing\ApacheHDFS\wbench>rem  --loglevel TRACE ^ 
+
+D:\user\Testing\ApacheHDFS\wbench>set CLASSPATH=;;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin\hadoop-azure-3.2.1.jar 
+
+D:\user\Testing\ApacheHDFS\wbench>set HADOOP_OPTIONAL_TOOLS="hadoop-azure,hadoop-azure-datalake" 
+
+D:\user\Testing\ApacheHDFS\wbench>set HADOOP_TOOLS_HOME=D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\tools\ 
+
+D:\user\Testing\ApacheHDFS\wbench>set HADOOP_TOOLS_LIB_JARS_DIR=\lib\ 
+
+D:\user\Testing\ApacheHDFS\wbench>echo ;;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin\hadoop-azure-3.2.1.jar 
+;;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin\hadoop-azure-3.2.1.jar
+
+D:\user\Testing\ApacheHDFS\wbench>call D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin\hdfs.cmd    --config "D:\user\Testing\ApacheHDFS\wbench\etc\simple"\   dfs -fs wasbs://cont-03-continer@sshblobhierarchyon.blob.core.windows.net -ls / 
+CLASSPATH "D:\user\Testing\ApacheHDFS\wbench\etc\simple"\;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\mapreduce\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\mapreduce\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\tools\lib\*
+D:\user\miti\dev\trunk\External\jdk\jdk-11\\bin\java -Xmx1000m  -Dhadoop.log.dir=D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\logs -Dhadoop.log.file=hadoop.log -Dhadoop.home.dir=D:\app\apache\hadoop\3.2.1\hadoop-3.2.1 -Dhadoop.id.str=SSh -Dhadoop.root.logger=INFO,console -Djava.library.path=D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin -Dhadoop.policy.file=hadoop-policy.xml -Djava.net.preferIPv4Stack=true -Xmx512m -Xmx512m  -classpath "D:\user\Testing\ApacheHDFS\wbench\etc\simple"\;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\common\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\hdfs\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\yarn\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\mapreduce\lib\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\mapreduce\*;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\share\hadoop\tools\lib\* org.apache.hadoop.fs.FsShell -fs wasbs://cont-03-continer@sshblobhierarchyon.blob.core.windows.net -ls /
+Found 1 items
+drwxrwxrwx   -          0 1970-01-01 02:00 /Sample_Json
+;;D:\app\apache\hadoop\3.2.1\hadoop-3.2.1\bin\hadoop-azure-3.2.1.jar

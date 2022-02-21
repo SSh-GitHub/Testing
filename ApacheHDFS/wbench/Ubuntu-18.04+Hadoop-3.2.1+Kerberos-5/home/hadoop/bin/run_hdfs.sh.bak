@@ -1,0 +1,80 @@
+declare default_address=0.0.0.0
+declare hdfs_host=hdfs://ip-172-31-28-135.ec2.internal
+
+declare hdfs_auth=$1
+declare hdfs_command=$2
+
+if [[ $hdfs_auth = simple ]]; then
+  hdfs_port=8020
+  dfs_namenode_servicerpc_address=${default_address}:8022
+  dfs_namenode_rpc_bind_host=${default_address}
+  dfs_namenode_servicerpc_address=${default_address}:8022
+  dfs_https_address=${default_address}:50470
+  dfs_namenode_http_address=${default_address}:50070
+  dfs_datanode_address=${default_address}:50010
+  dfs_datanode_ipc_address=${default_address}:50020
+  dfs_datanode_http_address=${default_address}:50075
+  dfs_datanode_https_address=${default_address}:50475
+  dfs_namenode_secondary_http_address=${default_address}:50090
+  dfs_namenode_secondary_https_address=${default_address}:50495
+  dfs_data_transfer_protection=
+  dfs_http_policy=
+elif [[ $hdfs_auth = kerberos ]]; then
+  hdfs_port=8120
+  dfs_namenode_servicerpc_address=${default_address}:8122
+  dfs_namenode_rpc_bind_host=${default_address}
+  dfs_namenode_servicerpc_address=${default_address}:8122
+  dfs_https_address=${default_address}:51470
+  dfs_namenode_http_address=${default_address}:51070
+  dfs_datanode_address=${default_address}:51010
+  dfs_datanode_ipc_address=${default_address}:51020
+  dfs_datanode_http_address=${default_address}:51075
+  dfs_datanode_https_address=${default_address}:51475
+  dfs_namenode_secondary_http_address=${default_address}:51090
+  dfs_namenode_secondary_https_address=${default_address}:51495
+  dfs_data_transfer_protection=authentication
+  dfs_http_policy=HTTPS_ONLY
+else
+  echo The authorising method must be: 'simple' or 'kerberos'
+  exit
+fi
+
+export JAVA_HOME=/usr
+export HADOOP_HOME=/home/hadoop/hadoop-3.2.1
+export HADOOP_LOG_DIR=/home/hadoop/logs/${hdfs_auth}
+export HADOOP_PID_DIR=/home/hadoop/tmp/${hdfs_auth}
+export HADOOP_OPTS="\
+        -Dfs.defaultFS=${hdfs_host}:${hdfs_port}
+        -Dhadoop.security.authentication=${hdfs_auth}
+        
+        -Ddfs.namenode.servicerpc-address=${dfs_namenode_servicerpc_address}\
+        -Ddfs.namenode.rpc-bind-host=${dfs_namenode_rpc_bind_host}\
+        -Ddfs.namenode.servicerpc-address=${dfs_namenode_servicerpc_address}\
+        -Ddfs.https.address=${dfs_https_address}\
+        -Ddfs.namenode.http-address=${dfs_namenode_http_address}\
+        -Ddfs.datanode.address=${dfs_datanode_address}\
+        -Ddfs.datanode.ipc.address=${dfs_datanode_ipc_address}\
+        -Ddfs.datanode.http.address=${dfs_datanode_http_address}\
+        -Ddfs.datanode.https.address=${dfs_datanode_https_address}\
+        -Ddfs.namenode.secondary.http-address=${dfs_namenode_secondary_http_address}\
+        -Ddfs.namenode.secondary.https-address=${dfs_namenode_secondary_https_address}\
+        
+        -Ddfs.namenode.keytab.file=/home/sergiy/etc/hdfs_hadoop-01.keytab\
+        -Ddfs.namenode.kerberos.principal=hdfs/hadoop-01@KERBEROS-02\
+        -Ddfs.web.authentication.kerberos.principal=hdfs/hadoop-01@KERBEROS-02\
+        -Ddfs.block.access.token.enable=true\
+        -Ddfs.namenode.name.dir=/home/hadoop/var/${hdfs_auth}/namenode\
+        -Ddfs.datanode.data.dir=/home/hadoop/var/${hdfs_auth}/datanode\
+
+        -Ddfs.namenode.keytab.file=/home/hadoop/keytabs/hdfs_namenode.keytab
+        -Ddfs.namenode.kerberos.principal=hdfs_namenode/ip-172-31-28-135.ec2.internal@HADOOP.REALM
+        -Ddfs.datanode.keytab.file=/home/hadoop/keytabs/hdfs_datanode.keytab
+        -Ddfs.datanode.kerberos.principal=hdfs_datanode/ip-172-31-28-135.ec2.internal@HADOOP.REALM
+
+	-Ddfs.data.transfer.protection=dfs_data_transfer_protection
+	-Ddfs.http.policy=dfs_http_policy
+        "
+echo HADOOP_OPTS="${HADOOP_OPTS}"
+echo ${HADOOP_HOME}/bin/hdfs ${hdfs_command} ${hdfs_subcommand}
+${HADOOP_HOME}/bin/hdfs ${hdfs_command}
+

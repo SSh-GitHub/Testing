@@ -1,0 +1,1 @@
+sftp.exe -i D:\user\Testing\ApacheKafka\wbench\AWS\aws_us-east-1_key-pair.pem ubuntu@ip-172-31-28-135.ec2.internal

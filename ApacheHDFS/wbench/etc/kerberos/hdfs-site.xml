@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>dfs.namenode.servicerpc-address</name>
+    <value>0.0.0.0:8122</value>
+  </property>
+  <property>
+    <name>dfs.namenode.rpc-bind-host</name>
+    <value>0.0.0.0</value>
+  </property>
+  <property>
+    <name>dfs.namenode.servicerpc-address</name>
+    <value>0.0.0.0:8122</value>
+  </property>
+  <property>
+    <name>dfs.https.address</name>
+    <value>0.0.0.0:51470</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address</name>
+    <value>0.0.0.0:51070</value>
+  </property>
+  <property>
+    <name>dfs.datanode.address</name>
+    <value>0.0.0.0:51010</value>
+  </property>
+  <property>
+    <name>dfs.datanode.ipc.address</name>
+    <value>0.0.0.0:51020</value>
+  </property>
+  <property>
+    <name>dfs.datanode.http.address</name>
+    <value>0.0.0.0:51075</value>
+  </property>
+  <property>
+    <name>dfs.datanode.https.address</name>
+    <value>0.0.0.0:51475</value>
+  </property>
+  <property>
+    <name>dfs.namenode.secondary.http-address</name>
+    <value>0.0.0.0:51090</value>
+  </property>
+  <property>
+    <name>dfs.namenode.secondary.https-address</name>
+    <value>0.0.0.0:51495</value>
+  </property>
+
+  <property>
+    <name>dfs.block.access.token.enable</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/home/hadoop/var/kerberos/namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name> 
+    <value>/home/hadoop/var/kerberos/datanode</value>
+  </property>
+
+  <!-- KERBEROS SUPPORT -->
+  <property>
+    <name>dfs.namenode.keytab.file</name>
+    <value>/home/hadoop/keytabs/hdfs_namenode.keytab</value>
+  </property>
+  <property>
+    <name>dfs.namenode.kerberos.principal</name>
+    <value>hdfs_namenode/ip-172-31-28-135.ec2.internal@HADOOP.REALM</value>
+  </property>
+
+  <property>
+    <name>dfs.datanode.keytab.file</name>
+    <value>/home/hadoop/keytabs/hdfs_datanode.keytab</value>
+  </property>
+  <property>
+    <name>dfs.datanode.kerberos.principal</name>
+    <value>hdfs_datanode/ip-172-31-28-135.ec2.internal@HADOOP.REALM</value>
+  </property>
+
+  <property>
+    <name>dfs.web.authentication.kerberos.principal</name>
+    <value>hdfs_namenode/ip-172-31-28-135.ec2.internal@HADOOP.REALM</value>
+  </property>
+
+  <property>
+    <name>dfs.data.transfer.protection</name> 
+    <value>authentication</value>
+  </property>
+  <property>
+    <name>dfs.http.policy</name> 
+    <value>HTTPS_ONLY</value>
+  </property>
+
+  <property>
+         <name>dfs.encrypt.data.transfer</name>
+         <value>true</value>
+  </property>
+  <property>
+         <name>dfs.datanode.data.dir.perm</name>
+         <value>700</value>
+  </property>
+
+  <property>
+    <name>dfs.client.use.datanode.hostname</name>
+    <value>true</value>
+  </property>
+
+</configuration>
